@@ -1,15 +1,24 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title> - 风铃却清风</title>
+        <title> - 风铃却清山</title>
         <link>https://llp2333.github.io/posts/</link>
-        <description> | 风铃却清风</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 31 Jul 2023 08:56:28 &#43;0800</lastBuildDate><atom:link href="https://llp2333.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <description> | 风铃却清山</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>qvqw2233@gmail.com (LLP2333)</managingEditor>
+            <webMaster>qvqw2233@gmail.com (LLP2333)</webMaster><lastBuildDate>Mon, 31 Jul 2023 08:56:28 &#43;0800</lastBuildDate><atom:link href="https://llp2333.github.io/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Hello</title>
     <link>https://llp2333.github.io/posts/hello/</link>
     <pubDate>Mon, 31 Jul 2023 08:56:28 &#43;0800</pubDate>
-    <author></author>
+    <author>LLP2333</author>
     <guid>https://llp2333.github.io/posts/hello/</guid>
     <description><![CDATA[Start Hello World~]]></description>
+</item>
+<item>
+    <title></title>
+    <link>https://llp2333.github.io/posts/%E4%BD%BF%E7%94%A8github%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>LLP2333</author>
+    <guid>https://llp2333.github.io/posts/%E4%BD%BF%E7%94%A8github%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99/</guid>
+    <description><![CDATA[该博客基于GitHub page+hugo搭建]]></description>
 </item>
 </channel>
 </rss>
