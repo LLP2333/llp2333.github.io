@@ -4,7 +4,15 @@
         <link>https://llp2333.github.io/posts/</link>
         <description> | 风铃却青山</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>qvqw2233@gmail.com (LLP2333)</managingEditor>
-            <webMaster>qvqw2233@gmail.com (LLP2333)</webMaster><lastBuildDate>Tue, 19 Sep 2023 16:03:23 &#43;0800</lastBuildDate><atom:link href="https://llp2333.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>qvqw2233@gmail.com (LLP2333)</webMaster><lastBuildDate>Fri, 01 Dec 2023 19:19:44 &#43;0800</lastBuildDate><atom:link href="https://llp2333.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>国内域名只能使用国内域名注册商的服务器</title>
+    <link>https://llp2333.github.io/posts/%E5%9B%BD%E5%86%85%E5%9F%9F%E5%90%8D%E5%8F%AA%E8%83%BD%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E5%9F%9F%E5%90%8D%E6%B3%A8%E5%86%8C%E5%95%86%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+    <pubDate>Fri, 01 Dec 2023 19:19:44 &#43;0800</pubDate>
+    <author>LLP2333</author>
+    <guid>https://llp2333.github.io/posts/%E5%9B%BD%E5%86%85%E5%9F%9F%E5%90%8D%E5%8F%AA%E8%83%BD%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E5%9F%9F%E5%90%8D%E6%B3%A8%E5%86%8C%E5%95%86%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+    <description><![CDATA[事件 之前一直把国内域名解析到github的静态网站，最近收到通知，域名必须解析到国内的服务器。 而且由于我的域名是在腾讯云注册的，必须使用腾讯]]></description>
+</item>
+<item>
     <title>使用rock5A解决校园网mac地址限制</title>
     <link>https://llp2333.github.io/posts/%E4%BD%BF%E7%94%A8rock5a%E8%A7%A3%E5%86%B3%E6%A0%A1%E5%9B%AD%E7%BD%91mac%E5%9C%B0%E5%9D%80%E9%99%90%E5%88%B6/</link>
     <pubDate>Tue, 19 Sep 2023 16:03:23 &#43;0800</pubDate>
