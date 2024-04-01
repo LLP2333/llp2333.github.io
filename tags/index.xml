@@ -1,8 +1,34 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Tags - tag - 风铃却青山</title>
-        <link>https://llp2333.github.io/tags/</link>
-        <description>Tags - tag - 风铃却青山</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>qvqw2233@gmail.com (LLP2333)</managingEditor>
-            <webMaster>qvqw2233@gmail.com (LLP2333)</webMaster><atom:link href="https://llp2333.github.io/tags/" rel="self" type="application/rss+xml" /></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on LLP2333&#39;s Blog</title>
+    <link>https://llp2333.github.io/tags/</link>
+    <description>Recent content in Tags on LLP2333&#39;s Blog</description>
+    <image>
+      <title>LLP2333&#39;s Blog</title>
+      <url>https://llp2333.github.io/images/papermod-cover.png</url>
+      <link>https://llp2333.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 01 Dec 2023 19:19:44 +0800</lastBuildDate><atom:link href="https://llp2333.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>域名解析</title>
+      <link>https://llp2333.github.io/tags/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/</link>
+      <pubDate>Fri, 01 Dec 2023 19:19:44 +0800</pubDate>
+      
+      <guid>https://llp2333.github.io/tags/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>建站</title>
+      <link>https://llp2333.github.io/tags/%E5%BB%BA%E7%AB%99/</link>
+      <pubDate>Mon, 31 Jul 2023 08:56:28 +0800</pubDate>
+      
+      <guid>https://llp2333.github.io/tags/%E5%BB%BA%E7%AB%99/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
 </rss>
