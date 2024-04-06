@@ -11,7 +11,26 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 01 Apr 2024 19:39:06 +0800</lastBuildDate><atom:link href="https://llp2333.github.io/archives/2024/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Apr 2024 20:29:58 +0800</lastBuildDate><atom:link href="https://llp2333.github.io/archives/2024/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>前端路线</title>
+      <link>https://llp2333.github.io/posts/%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%BA%BF/</link>
+      <pubDate>Sat, 06 Apr 2024 20:29:58 +0800</pubDate>
+      
+      <guid>https://llp2333.github.io/posts/%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%BA%BF/</guid>
+      <description>前端路线 0 Roadmap 新手 进阶 1 HTML &amp;amp; CSS freecodecamp网站 里的 『响应式网页设计认证』 css学习：learnlayout网站 flex 布局： 学习：vgee.cn网站 练习：flexboxfroggy 2 JavaScript 《JavaScript权威指南》第六版 （2012年出版）PDF 《JavaScript 高级程序设计》（2019年出版） JavaScript 教程：网址 阮一峰的 ES6 教程 3 框架 React Vue 4 构建工具 《前端工程化》基于Vue3 教材：网址 Webpack Vite 5 大而全的教程 微软的前端教程：github网址 coderwhy 大前端系列教程 各种教程的网站：质量挺高（英语） frontendmasters网址 MDN 网址：大而全的文档 ChatGPT：升级到 plus 版本，打开使用网络内容的设置 6 具体步骤 基础知识（a、b可同步进行） HTML &amp;amp; CSS JavaScript 学习框架 React：更适合作为第一个框架学习 Vue：使得用起来更方便，但不利于新人了解具体实现原理 构建工具 在学习框架时也会用到构建工具 学完框架后再系统性学习 抄一个网站 在学完 HTML &amp;amp; CSS 时可以抄静态页面 学完 JavaScript、框架后可以抄整个站 </description>
+    </item>
+    
+    <item>
+      <title>基于s3协议的对象存储如何创建或者删除文件夹</title>
+      <link>https://llp2333.github.io/posts/%E5%9F%BA%E4%BA%8Es3%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E6%88%96%E8%80%85%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%A4%B9/</link>
+      <pubDate>Sat, 06 Apr 2024 17:23:56 +0800</pubDate>
+      
+      <guid>https://llp2333.github.io/posts/%E5%9F%BA%E4%BA%8Es3%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E6%88%96%E8%80%85%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%A4%B9/</guid>
+      <description>基于s3协议的对象存储如何创建或者删除文件夹 ​ 首先我们必须明确的是，对象存储没有文件 夹的概念，所谓的文件夹只是文件的前缀
+参考链接https://www.codemzy.com/blog/delete-s3-folder-nodejs</description>
+    </item>
+    
     <item>
       <title>Hugo使用技巧</title>
       <link>https://llp2333.github.io/posts/hugo%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</link>
