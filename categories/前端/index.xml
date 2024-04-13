@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>前端 on LLP2333&#39;s Blog</title>
-    <link>https://llp2333.github.io/categories/%E5%89%8D%E7%AB%AF/</link>
+    <link>http://llp2333.github.io/categories/%E5%89%8D%E7%AB%AF/</link>
     <description>Recent content in 前端 on LLP2333&#39;s Blog</description>
     <image>
       <title>LLP2333&#39;s Blog</title>
-      <url>https://llp2333.github.io/images/papermod-cover.png</url>
-      <link>https://llp2333.github.io/images/papermod-cover.png</link>
+      <url>http://llp2333.github.io/images/papermod-cover.png</url>
+      <link>http://llp2333.github.io/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 06 Apr 2024 20:29:58 +0800</lastBuildDate><atom:link href="https://llp2333.github.io/categories/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Apr 2024 20:29:58 +0800</lastBuildDate><atom:link href="http://llp2333.github.io/categories/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>前端路线</title>
-      <link>https://llp2333.github.io/posts/%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%BA%BF/</link>
+      <link>http://llp2333.github.io/posts/%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%BA%BF/</link>
       <pubDate>Sat, 06 Apr 2024 20:29:58 +0800</pubDate>
       
-      <guid>https://llp2333.github.io/posts/%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%BA%BF/</guid>
+      <guid>http://llp2333.github.io/posts/%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%BA%BF/</guid>
       <description>前端路线 0 Roadmap 新手 进阶 1 HTML &amp;amp; CSS freecodecamp网站 里的 『响应式网页设计认证』 css学习：learnlayout网站 flex 布局： 学习：vgee.cn网站 练习：flexboxfroggy 2 JavaScript 《JavaScript权威指南》第六版 （2012年出版）PDF 《JavaScript 高级程序设计》（2019年出版） JavaScript 教程：网址 阮一峰的 ES6 教程 3 框架 React Vue 4 构建工具 《前端工程化》基于Vue3 教材：网址 Webpack Vite 5 大而全的教程 微软的前端教程：github网址 coderwhy 大前端系列教程 各种教程的网站：质量挺高（英语） frontendmasters网址 MDN 网址：大而全的文档 ChatGPT：升级到 plus 版本，打开使用网络内容的设置 6 具体步骤 基础知识（a、b可同步进行） HTML &amp;amp; CSS JavaScript 学习框架 React：更适合作为第一个框架学习 Vue：使得用起来更方便，但不利于新人了解具体实现原理 构建工具 在学习框架时也会用到构建工具 学完框架后再系统性学习 抄一个网站 在学完 HTML &amp;amp; CSS 时可以抄静态页面 学完 JavaScript、框架后可以抄整个站 </description>
     </item>
     

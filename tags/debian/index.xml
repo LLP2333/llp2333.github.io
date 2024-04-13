@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>debian on LLP2333&#39;s Blog</title>
-    <link>https://llp2333.github.io/tags/debian/</link>
+    <link>http://llp2333.github.io/tags/debian/</link>
     <description>Recent content in debian on LLP2333&#39;s Blog</description>
     <image>
       <title>LLP2333&#39;s Blog</title>
-      <url>https://llp2333.github.io/images/papermod-cover.png</url>
-      <link>https://llp2333.github.io/images/papermod-cover.png</link>
+      <url>http://llp2333.github.io/images/papermod-cover.png</url>
+      <link>http://llp2333.github.io/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 11 Apr 2024 13:00:56 +0800</lastBuildDate><atom:link href="https://llp2333.github.io/tags/debian/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Apr 2024 13:00:56 +0800</lastBuildDate><atom:link href="http://llp2333.github.io/tags/debian/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>记录一次系统迁移</title>
-      <link>https://llp2333.github.io/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E7%B3%BB%E7%BB%9F%E8%BF%81%E7%A7%BB/</link>
+      <link>http://llp2333.github.io/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E7%B3%BB%E7%BB%9F%E8%BF%81%E7%A7%BB/</link>
       <pubDate>Thu, 11 Apr 2024 13:00:56 +0800</pubDate>
       
-      <guid>https://llp2333.github.io/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E7%B3%BB%E7%BB%9F%E8%BF%81%E7%A7%BB/</guid>
+      <guid>http://llp2333.github.io/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E7%B3%BB%E7%BB%9F%E8%BF%81%E7%A7%BB/</guid>
       <description>记录一次系统迁移 开发板为rock 5a，使用的为Debian系统。最近买了一个香橙派5plus的64G的emmc(和rock5A通用并且比官方的更便宜)，打算将系统从内存卡迁移到emmc。
 查看当前磁盘情况 fdisk -l 得到新磁盘名字为/dev/mmcblk0,原内存卡设备为/dev/mmcblk1
 使用dd命令迁移 系统 sudo dd if=/dev/mmcblk1 of=/dev/mmcblk0 bs=4M status=progress dd：待执行的命令，即复制和转换命令。

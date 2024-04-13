@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>LLP2333&#39;s Blog</title>
-    <link>https://llp2333.github.io/</link>
+    <link>http://llp2333.github.io/</link>
     <description>Recent content on LLP2333&#39;s Blog</description>
     <image>
       <title>LLP2333&#39;s Blog</title>
-      <url>https://llp2333.github.io/images/papermod-cover.png</url>
-      <link>https://llp2333.github.io/images/papermod-cover.png</link>
+      <url>http://llp2333.github.io/images/papermod-cover.png</url>
+      <link>http://llp2333.github.io/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Apr 2024 17:35:54 +0800</lastBuildDate><atom:link href="https://llp2333.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Apr 2024 17:35:54 +0800</lastBuildDate><atom:link href="http://llp2333.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用cpolar为rock5A进行内网穿透</title>
-      <link>https://llp2333.github.io/posts/%E4%BD%BF%E7%94%A8cpolar%E4%B8%BArock5a%E8%BF%9B%E8%A1%8C%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
+      <link>http://llp2333.github.io/posts/%E4%BD%BF%E7%94%A8cpolar%E4%B8%BArock5a%E8%BF%9B%E8%A1%8C%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
       <pubDate>Sat, 13 Apr 2024 17:35:54 +0800</pubDate>
       
-      <guid>https://llp2333.github.io/posts/%E4%BD%BF%E7%94%A8cpolar%E4%B8%BArock5a%E8%BF%9B%E8%A1%8C%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
+      <guid>http://llp2333.github.io/posts/%E4%BD%BF%E7%94%A8cpolar%E4%B8%BArock5a%E8%BF%9B%E8%A1%8C%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
       <description>使用cpolar为rock 5A进行内网穿透 github上有开源的frp项目，如果有一台云服务器的话，用来内网穿透很不错。但是，使用云服务+frp的方案，开放某个端口，还需要去修改云服务的安全组，比较麻烦。考虑到方便性，我用了cpolar做内网穿透。
 注：rock 5A 为arm开发板，系统为debian12（和树莓派、香橙派等arm计算机的教程理论上通用）
 安装 我这里使用的官方的一键安装脚本
@@ -30,10 +30,10 @@ cpolar authtoken xxxxxxxxxxxxxxxxxx 设置开机自启动并启动cpolar服务 s
     
     <item>
       <title>记录一次系统迁移</title>
-      <link>https://llp2333.github.io/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E7%B3%BB%E7%BB%9F%E8%BF%81%E7%A7%BB/</link>
+      <link>http://llp2333.github.io/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E7%B3%BB%E7%BB%9F%E8%BF%81%E7%A7%BB/</link>
       <pubDate>Thu, 11 Apr 2024 13:00:56 +0800</pubDate>
       
-      <guid>https://llp2333.github.io/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E7%B3%BB%E7%BB%9F%E8%BF%81%E7%A7%BB/</guid>
+      <guid>http://llp2333.github.io/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E7%B3%BB%E7%BB%9F%E8%BF%81%E7%A7%BB/</guid>
       <description>记录一次系统迁移 开发板为rock 5a，使用的为Debian系统。最近买了一个香橙派5plus的64G的emmc(和rock5A通用并且比官方的更便宜)，打算将系统从内存卡迁移到emmc。
 查看当前磁盘情况 fdisk -l 得到新磁盘名字为/dev/mmcblk0,原内存卡设备为/dev/mmcblk1
 使用dd命令迁移 系统 sudo dd if=/dev/mmcblk1 of=/dev/mmcblk0 bs=4M status=progress dd：待执行的命令，即复制和转换命令。
@@ -49,29 +49,29 @@ parted /dev/mmcblk0 resizepart 3 100% </description>
     
     <item>
       <title>前端路线</title>
-      <link>https://llp2333.github.io/posts/%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%BA%BF/</link>
+      <link>http://llp2333.github.io/posts/%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%BA%BF/</link>
       <pubDate>Sat, 06 Apr 2024 20:29:58 +0800</pubDate>
       
-      <guid>https://llp2333.github.io/posts/%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%BA%BF/</guid>
+      <guid>http://llp2333.github.io/posts/%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%BA%BF/</guid>
       <description>前端路线 0 Roadmap 新手 进阶 1 HTML &amp;amp; CSS freecodecamp网站 里的 『响应式网页设计认证』 css学习：learnlayout网站 flex 布局： 学习：vgee.cn网站 练习：flexboxfroggy 2 JavaScript 《JavaScript权威指南》第六版 （2012年出版）PDF 《JavaScript 高级程序设计》（2019年出版） JavaScript 教程：网址 阮一峰的 ES6 教程 3 框架 React Vue 4 构建工具 《前端工程化》基于Vue3 教材：网址 Webpack Vite 5 大而全的教程 微软的前端教程：github网址 coderwhy 大前端系列教程 各种教程的网站：质量挺高（英语） frontendmasters网址 MDN 网址：大而全的文档 ChatGPT：升级到 plus 版本，打开使用网络内容的设置 6 具体步骤 基础知识（a、b可同步进行） HTML &amp;amp; CSS JavaScript 学习框架 React：更适合作为第一个框架学习 Vue：使得用起来更方便，但不利于新人了解具体实现原理 构建工具 在学习框架时也会用到构建工具 学完框架后再系统性学习 抄一个网站 在学完 HTML &amp;amp; CSS 时可以抄静态页面 学完 JavaScript、框架后可以抄整个站 </description>
     </item>
     
     <item>
       <title>基于s3协议的对象存储如何创建或者删除文件夹</title>
-      <link>https://llp2333.github.io/posts/%E5%9F%BA%E4%BA%8Es3%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E6%88%96%E8%80%85%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%A4%B9/</link>
+      <link>http://llp2333.github.io/posts/%E5%9F%BA%E4%BA%8Es3%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E6%88%96%E8%80%85%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%A4%B9/</link>
       <pubDate>Sat, 06 Apr 2024 17:23:56 +0800</pubDate>
       
-      <guid>https://llp2333.github.io/posts/%E5%9F%BA%E4%BA%8Es3%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E6%88%96%E8%80%85%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%A4%B9/</guid>
+      <guid>http://llp2333.github.io/posts/%E5%9F%BA%E4%BA%8Es3%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E6%88%96%E8%80%85%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%A4%B9/</guid>
       <description>基于s3协议的对象存储如何创建或者删除文件夹 ​ 首先我们必须明确的是，对象存储没有文件 夹的概念，所谓的文件夹只是文件的前缀
 参考链接https://www.codemzy.com/blog/delete-s3-folder-nodejs</description>
     </item>
     
     <item>
       <title>Hugo使用技巧</title>
-      <link>https://llp2333.github.io/posts/hugo%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</link>
+      <link>http://llp2333.github.io/posts/hugo%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</link>
       <pubDate>Mon, 01 Apr 2024 19:39:06 +0800</pubDate>
       
-      <guid>https://llp2333.github.io/posts/hugo%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</guid>
+      <guid>http://llp2333.github.io/posts/hugo%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</guid>
       <description>Hugo使用技巧 如何让hugo和typora均能正常显示图片 创建文章时，设置路径为
 hugo new posts/文章标题/index.md 注意：markdown文件必须以index命名
 typora图片设置
@@ -81,19 +81,19 @@ hugo常用命令 hugo new posts/文章标题/index.md #新建文章 hugo #生成
     
     <item>
       <title>国内域名只能使用国内域名注册商的服务器</title>
-      <link>https://llp2333.github.io/posts/%E5%9B%BD%E5%86%85%E5%9F%9F%E5%90%8D%E9%97%AE%E9%A2%98/</link>
+      <link>http://llp2333.github.io/posts/%E5%9B%BD%E5%86%85%E5%9F%9F%E5%90%8D%E9%97%AE%E9%A2%98/</link>
       <pubDate>Fri, 01 Dec 2023 19:19:44 +0800</pubDate>
       
-      <guid>https://llp2333.github.io/posts/%E5%9B%BD%E5%86%85%E5%9F%9F%E5%90%8D%E9%97%AE%E9%A2%98/</guid>
+      <guid>http://llp2333.github.io/posts/%E5%9B%BD%E5%86%85%E5%9F%9F%E5%90%8D%E9%97%AE%E9%A2%98/</guid>
       <description>事件 之前一直把国内域名解析到github的静态网站，最近收到通知，域名必须解析到国内的服务器。 而且由于我的域名是在腾讯云注册的，必须使用腾讯云的服务器，而不是比如阿里云的服务器厂商。 总结，越来越严了</description>
     </item>
     
     <item>
       <title>使用rock5A解决校园网mac地址限制</title>
-      <link>https://llp2333.github.io/posts/rock5a%E8%A7%A3%E5%86%B3mac%E5%9C%B0%E5%9D%80%E9%99%90%E5%88%B6/</link>
+      <link>http://llp2333.github.io/posts/rock5a%E8%A7%A3%E5%86%B3mac%E5%9C%B0%E5%9D%80%E9%99%90%E5%88%B6/</link>
       <pubDate>Tue, 19 Sep 2023 16:03:23 +0800</pubDate>
       
-      <guid>https://llp2333.github.io/posts/rock5a%E8%A7%A3%E5%86%B3mac%E5%9C%B0%E5%9D%80%E9%99%90%E5%88%B6/</guid>
+      <guid>http://llp2333.github.io/posts/rock5a%E8%A7%A3%E5%86%B3mac%E5%9C%B0%E5%9D%80%E9%99%90%E5%88%B6/</guid>
       <description>材料 rock5A、AX210无线网卡、小米路由器
 rock5A安装系统 系统地址https://github.com/radxa-build/rock-5a/releases
 这里我选择的是debian cli 版本，默认用户名和密码rock。
@@ -105,19 +105,19 @@ rock5A安装系统 系统地址https://github.com/radxa-build/rock-5a/releases
     
     <item>
       <title>Hello</title>
-      <link>https://llp2333.github.io/posts/hello/</link>
+      <link>http://llp2333.github.io/posts/hello/</link>
       <pubDate>Mon, 31 Jul 2023 08:56:28 +0800</pubDate>
       
-      <guid>https://llp2333.github.io/posts/hello/</guid>
+      <guid>http://llp2333.github.io/posts/hello/</guid>
       <description>Start Hello World~</description>
     </item>
     
     <item>
       <title>使用github搭建网站</title>
-      <link>https://llp2333.github.io/posts/github%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99/</link>
+      <link>http://llp2333.github.io/posts/github%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99/</link>
       <pubDate>Mon, 31 Jul 2023 08:56:28 +0800</pubDate>
       
-      <guid>https://llp2333.github.io/posts/github%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99/</guid>
+      <guid>http://llp2333.github.io/posts/github%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99/</guid>
       <description>该博客基于GitHub page+hugo搭建 </description>
     </item>
     
