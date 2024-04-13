@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>内网穿透 on LLP2333&#39;s Blog</title>
-    <link>https://llp2333.github.io/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
+    <link>https://qvqw.date/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
     <description>Recent content in 内网穿透 on LLP2333&#39;s Blog</description>
     <image>
       <title>LLP2333&#39;s Blog</title>
-      <url>https://llp2333.github.io/images/papermod-cover.png</url>
-      <link>https://llp2333.github.io/images/papermod-cover.png</link>
+      <url>https://qvqw.date/images/papermod-cover.png</url>
+      <link>https://qvqw.date/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Apr 2024 17:35:54 +0800</lastBuildDate><atom:link href="https://llp2333.github.io/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Apr 2024 17:35:54 +0800</lastBuildDate><atom:link href="https://qvqw.date/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用cpolar为rock5A进行内网穿透</title>
-      <link>https://llp2333.github.io/posts/%E4%BD%BF%E7%94%A8cpolar%E4%B8%BArock5a%E8%BF%9B%E8%A1%8C%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
+      <link>https://qvqw.date/posts/%E4%BD%BF%E7%94%A8cpolar%E4%B8%BArock5a%E8%BF%9B%E8%A1%8C%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
       <pubDate>Sat, 13 Apr 2024 17:35:54 +0800</pubDate>
       
-      <guid>https://llp2333.github.io/posts/%E4%BD%BF%E7%94%A8cpolar%E4%B8%BArock5a%E8%BF%9B%E8%A1%8C%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
+      <guid>https://qvqw.date/posts/%E4%BD%BF%E7%94%A8cpolar%E4%B8%BArock5a%E8%BF%9B%E8%A1%8C%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
       <description>使用cpolar为rock 5A进行内网穿透 github上有开源的frp项目，如果有一台云服务器的话，用来内网穿透很不错。但是，使用云服务+frp的方案，开放某个端口，还需要去修改云服务的安全组，比较麻烦。考虑到方便性，我用了cpolar做内网穿透。
 注：rock 5A 为arm开发板，系统为debian12（和树莓派、香橙派等arm计算机的教程理论上通用）
 安装 我这里使用的官方的一键安装脚本

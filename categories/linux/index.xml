@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Linux on LLP2333&#39;s Blog</title>
-    <link>https://llp2333.github.io/categories/linux/</link>
+    <link>https://qvqw.date/categories/linux/</link>
     <description>Recent content in Linux on LLP2333&#39;s Blog</description>
     <image>
       <title>LLP2333&#39;s Blog</title>
-      <url>https://llp2333.github.io/images/papermod-cover.png</url>
-      <link>https://llp2333.github.io/images/papermod-cover.png</link>
+      <url>https://qvqw.date/images/papermod-cover.png</url>
+      <link>https://qvqw.date/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Apr 2024 17:35:54 +0800</lastBuildDate><atom:link href="https://llp2333.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Apr 2024 17:35:54 +0800</lastBuildDate><atom:link href="https://qvqw.date/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用cpolar为rock5A进行内网穿透</title>
-      <link>https://llp2333.github.io/posts/%E4%BD%BF%E7%94%A8cpolar%E4%B8%BArock5a%E8%BF%9B%E8%A1%8C%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
+      <link>https://qvqw.date/posts/%E4%BD%BF%E7%94%A8cpolar%E4%B8%BArock5a%E8%BF%9B%E8%A1%8C%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
       <pubDate>Sat, 13 Apr 2024 17:35:54 +0800</pubDate>
       
-      <guid>https://llp2333.github.io/posts/%E4%BD%BF%E7%94%A8cpolar%E4%B8%BArock5a%E8%BF%9B%E8%A1%8C%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
+      <guid>https://qvqw.date/posts/%E4%BD%BF%E7%94%A8cpolar%E4%B8%BArock5a%E8%BF%9B%E8%A1%8C%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
       <description>使用cpolar为rock 5A进行内网穿透 github上有开源的frp项目，如果有一台云服务器的话，用来内网穿透很不错。但是，使用云服务+frp的方案，开放某个端口，还需要去修改云服务的安全组，比较麻烦。考虑到方便性，我用了cpolar做内网穿透。
 注：rock 5A 为arm开发板，系统为debian12（和树莓派、香橙派等arm计算机的教程理论上通用）
 安装 我这里使用的官方的一键安装脚本
@@ -30,10 +30,10 @@ cpolar authtoken xxxxxxxxxxxxxxxxxx 设置开机自启动并启动cpolar服务 s
     
     <item>
       <title>记录一次系统迁移</title>
-      <link>https://llp2333.github.io/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E7%B3%BB%E7%BB%9F%E8%BF%81%E7%A7%BB/</link>
+      <link>https://qvqw.date/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E7%B3%BB%E7%BB%9F%E8%BF%81%E7%A7%BB/</link>
       <pubDate>Thu, 11 Apr 2024 13:00:56 +0800</pubDate>
       
-      <guid>https://llp2333.github.io/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E7%B3%BB%E7%BB%9F%E8%BF%81%E7%A7%BB/</guid>
+      <guid>https://qvqw.date/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E7%B3%BB%E7%BB%9F%E8%BF%81%E7%A7%BB/</guid>
       <description>记录一次系统迁移 开发板为rock 5a，使用的为Debian系统。最近买了一个香橙派5plus的64G的emmc(和rock5A通用并且比官方的更便宜)，打算将系统从内存卡迁移到emmc。
 查看当前磁盘情况 fdisk -l 得到新磁盘名字为/dev/mmcblk0,原内存卡设备为/dev/mmcblk1
 使用dd命令迁移 系统 sudo dd if=/dev/mmcblk1 of=/dev/mmcblk0 bs=4M status=progress dd：待执行的命令，即复制和转换命令。
