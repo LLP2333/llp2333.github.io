@@ -18,14 +18,14 @@
       <pubDate>Sat, 13 Apr 2024 17:35:54 +0800</pubDate>
       
       <guid>https://qvqw.date/posts/%E4%BD%BF%E7%94%A8cpolar%E4%B8%BArock5a%E8%BF%9B%E8%A1%8C%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
-      <description>使用cpolar为rock 5A进行内网穿透 github上有开源的frp项目，如果有一台云服务器的话，用来内网穿透很不错。但是，使用云服务+frp的方案，开放某个端口，还需要去修改云服务的安全组，比较麻烦。考虑到方便性，我用了cpolar做内网穿透。
-注：rock 5A 为arm开发板，系统为debian12（和树莓派、香橙派等arm计算机的教程理论上通用）
+      <description>使用 cpolar 为 rock 5A 进行内网穿透 github 上有开源的 frp 项目，如果有一台云服务器的话，用来内网穿透很不错。但是，使用云服务+frp 的方案，开放某个端口，还需要去修改云服务的安全组，比较麻烦。考虑到方便性，我用了 cpolar 做内网穿透。
+注：rock 5A 为 arm 开发板，系统为 debian12（和树莓派、香橙派等 arm 计算机的教程理论上通用）
 安装 我这里使用的官方的一键安装脚本
-curl -L https://www.cpolar.com/static/downloads/install-release-cpolar.sh | sudo bash 授权 执行下面 的命令进行授权（授权码在cpolar验证页面获取）
-cpolar authtoken xxxxxxxxxxxxxxxxxx 设置开机自启动并启动cpolar服务 systemctl enable cpolar systemctl start cpolar 完成上面的内容就基本上配置好了,你可以在cpolar官网的状态页面看到你的ssh隧道，可以通过该域名和端口远程访问本地的rock 5A
-注意：cpolar默认会配置本地机器ssh的 内网穿透，如需定制自己的内网穿透，请尝试根据官网文档修改配置文件。免费的内网穿透会在机器重启后变更域名和端口，重启后可以从cpolar官网状态页面获取，也可以考虑升级付费用户。
+curl -L https://www.cpolar.com/static/downloads/install-release-cpolar.sh | sudo bash 授权 执行下面 的命令进行授权（授权码在 cpolar 验证页面获取）
+cpolar authtoken xxxxxxxxxxxxxxxxxx 设置开机自启动并启动 cpolar 服务 systemctl enable cpolar systemctl start cpolar 完成上面的内容就基本上配置好了,你可以在 cpolar 官网的状态页面看到你的 ssh 隧道，可以通过该域名和端口远程访问本地的 rock 5A
+注意：cpolar 默认会配置本地机器 ssh 的 内网穿透，如需定制自己的内网穿透，请尝试根据官网文档修改配置文件。免费的内网穿透会在机器重启后变更域名和端口，重启后可以从 cpolar 官网状态页面获取，也可以考虑升级付费用户。
 配置文件 默认的配置文件在
-/usr/local/etc/cpolar/cpolar.yml </description>
+/usr/local/etc/cpolar/cpolar.yml 补充说明 使用过程中，我发现 cpolar 代理 http 导致了 rock 5A 的 cpu 占用飙升。后续我用了阿里云的服务器+frp 代理了 ssh,cloudflare tunnel 代理 http，cpu 占用几乎忽略不计。因此，建议 cpolar 内网穿透方案仅作备选。</description>
     </item>
     
   </channel>
