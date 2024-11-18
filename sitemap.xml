@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://qvqw.date/</loc>
+    <lastmod>2024-11-18T08:56:28+08:00</lastmod>
+  </url><url>
+    <loc>https://qvqw.date/posts/</loc>
+    <lastmod>2024-11-18T08:56:28+08:00</lastmod>
+  </url><url>
+    <loc>https://qvqw.date/posts/%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8Bspring-jpa/</loc>
+    <lastmod>2024-11-18T08:56:28+08:00</lastmod>
+  </url><url>
     <loc>https://qvqw.date/archives/2024/</loc>
     <lastmod>2024-04-13T17:35:54+08:00</lastmod>
   </url><url>
@@ -12,12 +21,6 @@
     <lastmod>2024-04-13T17:35:54+08:00</lastmod>
   </url><url>
     <loc>https://qvqw.date/categories/linux/</loc>
-    <lastmod>2024-04-13T17:35:54+08:00</lastmod>
-  </url><url>
-    <loc>https://qvqw.date/</loc>
-    <lastmod>2024-04-13T17:35:54+08:00</lastmod>
-  </url><url>
-    <loc>https://qvqw.date/posts/</loc>
     <lastmod>2024-04-13T17:35:54+08:00</lastmod>
   </url><url>
     <loc>https://qvqw.date/tags/</loc>
