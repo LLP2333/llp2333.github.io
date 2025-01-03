@@ -9,14 +9,14 @@
       <url>https://qvqw.date/images/papermod-cover.png</url>
       <link>https://qvqw.date/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.115.4</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 18 Nov 2024 08:56:28 +0800</lastBuildDate><atom:link href="https://qvqw.date/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Nov 2024 08:56:28 +0800</lastBuildDate>
+    <atom:link href="https://qvqw.date/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>一文搞懂如何在 Spring Boot 中正确使用 JPA</title>
       <link>https://qvqw.date/posts/%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8Bspring-jpa/</link>
       <pubDate>Mon, 18 Nov 2024 08:56:28 +0800</pubDate>
-      
       <guid>https://qvqw.date/posts/%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8Bspring-jpa/</guid>
       <description>JPA 这部分内容上手很容易，但是涉及到的东西还是挺多的，网上大部分关于 JPA 的资料都不是特别齐全，大部分用的版本也是比较落后的。另外，我下面讲到了的内容也不可能涵盖所有 JPA 相关内容，我只是把自己觉得比较重要的知识点总结在了下面。我自己也是参考着官方文档写的，官方文档非常详细了，非常推荐阅读一下。这篇文章可以帮助对 JPA 不了解或者不太熟悉的人来在实际项目中正确使用 JPA。
 项目代码基于 Spring Boot 最新的 2.1.9.RELEASE 版本构建（截止到这篇文章写完），另外，新建项目就不多说了，前面的文章已经很详细介绍过。
@@ -27,12 +27,10 @@
 create:每次重新启动项目都会重新创新表结构，会导致数据丢失 create-drop:每次启动项目创建表结构，关闭项目删除表结构 update:每次启动项目会更新表结构 validate:验证表结构，不对数据库进行任何更改 但是，一定要不要在生产环境使用 ddl 自动生成表结构，一般推荐手写 SQL 语句配合 Flyway 来做这些事情。
 # 数据库url地址 spring.datasource.url=jdbc:h2:mem:jpa-demo spring.datasource.username=root spring.datasource.password=123456 spring.datasource.platform=h2 spring.datasource.driverClassName =org.h2.Driver spring.jpa.properties.hibernate.enable_lazy_load_no_trans=true # 打印出 sql 语句 spring.</description>
     </item>
-    
     <item>
       <title>使用cpolar为rock5A进行内网穿透</title>
       <link>https://qvqw.date/posts/%E4%BD%BF%E7%94%A8cpolar%E4%B8%BArock5a%E8%BF%9B%E8%A1%8C%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
       <pubDate>Sat, 13 Apr 2024 17:35:54 +0800</pubDate>
-      
       <guid>https://qvqw.date/posts/%E4%BD%BF%E7%94%A8cpolar%E4%B8%BArock5a%E8%BF%9B%E8%A1%8C%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
       <description>使用 cpolar 为 rock 5A 进行内网穿透 github 上有开源的 frp 项目，如果有一台云服务器的话，用来内网穿透很不错。但是，使用云服务+frp 的方案，开放某个端口，还需要去修改云服务的安全组，比较麻烦。考虑到方便性，我用了 cpolar 做内网穿透。
 注：rock 5A 为 arm 开发板，系统为 debian12（和树莓派、香橙派等 arm 计算机的教程理论上通用）
@@ -43,12 +41,10 @@ cpolar authtoken xxxxxxxxxxxxxxxxxx 设置开机自启动并启动 cpolar 服务
 配置文件 默认的配置文件在
 /usr/local/etc/cpolar/cpolar.yml 补充说明 使用过程中，我发现 cpolar 代理 http 导致了 rock 5A 的 cpu 占用飙升。后续我用了阿里云的服务器+frp 代理了 ssh,cloudflare tunnel 代理 http，cpu 占用几乎忽略不计。因此，建议 cpolar 内网穿透方案仅作备选。</description>
     </item>
-    
     <item>
       <title>记录一次系统迁移</title>
       <link>https://qvqw.date/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E7%B3%BB%E7%BB%9F%E8%BF%81%E7%A7%BB/</link>
       <pubDate>Thu, 11 Apr 2024 13:00:56 +0800</pubDate>
-      
       <guid>https://qvqw.date/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E7%B3%BB%E7%BB%9F%E8%BF%81%E7%A7%BB/</guid>
       <description>记录一次系统迁移 开发板为 rock 5a，使用的为 Debian 系统。最近买了一个香橙派 5plus 的 64G 的 emmc(和 rock5A 通用并且比官方的更便宜)，打算将系统从内存卡迁移到 emmc。
 查看当前磁盘情况 fdisk -l 得到新磁盘名字为/dev/mmcblk0,原内存卡设备为/dev/mmcblk1
@@ -62,31 +58,25 @@ status=progress：这是一个可选参数，它可以实时显示dd命令的进
 parted /dev/mmcblk0 print #查看指定设备的磁盘大小 然后我对第 3 个分区进行了调整，使其扩容到 emmc 最大能支持的容量
 parted /dev/mmcblk0 resizepart 3 100% 最后用 resize2f 命令调整文件系统大小</description>
     </item>
-    
     <item>
       <title>前端路线</title>
       <link>https://qvqw.date/posts/%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%BA%BF/</link>
       <pubDate>Sat, 06 Apr 2024 20:29:58 +0800</pubDate>
-      
       <guid>https://qvqw.date/posts/%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%BA%BF/</guid>
       <description>前端路线 0 Roadmap 新手 进阶 1 HTML &amp;amp; CSS freecodecamp网站 里的 『响应式网页设计认证』 css学习：learnlayout网站 flex 布局： 学习：vgee.cn网站 练习：flexboxfroggy 2 JavaScript 《JavaScript权威指南》第六版 （2012年出版）PDF 《JavaScript 高级程序设计》（2019年出版） JavaScript 教程：网址 阮一峰的 ES6 教程 3 框架 React Vue 4 构建工具 《前端工程化》基于Vue3 教材：网址 Webpack Vite 5 大而全的教程 微软的前端教程：github网址 coderwhy 大前端系列教程 各种教程的网站：质量挺高（英语） frontendmasters网址 MDN 网址：大而全的文档 ChatGPT：升级到 plus 版本，打开使用网络内容的设置 6 具体步骤 基础知识（a、b可同步进行） HTML &amp;amp; CSS JavaScript 学习框架 React：更适合作为第一个框架学习 Vue：使得用起来更方便，但不利于新人了解具体实现原理 构建工具 在学习框架时也会用到构建工具 学完框架后再系统性学习 抄一个网站 在学完 HTML &amp;amp; CSS 时可以抄静态页面 学完 JavaScript、框架后可以抄整个站 </description>
     </item>
-    
     <item>
       <title>基于s3协议的对象存储如何创建或者删除文件夹</title>
       <link>https://qvqw.date/posts/%E5%9F%BA%E4%BA%8Es3%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E6%88%96%E8%80%85%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%A4%B9/</link>
       <pubDate>Sat, 06 Apr 2024 17:23:56 +0800</pubDate>
-      
       <guid>https://qvqw.date/posts/%E5%9F%BA%E4%BA%8Es3%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E6%88%96%E8%80%85%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%A4%B9/</guid>
       <description>基于s3协议的对象存储如何创建或者删除文件夹 ​ 首先我们必须明确的是，对象存储没有文件 夹的概念，所谓的文件夹只是文件的前缀
 参考链接https://www.codemzy.com/blog/delete-s3-folder-nodejs</description>
     </item>
-    
     <item>
       <title>Hugo使用技巧</title>
       <link>https://qvqw.date/posts/hugo%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</link>
       <pubDate>Mon, 01 Apr 2024 19:39:06 +0800</pubDate>
-      
       <guid>https://qvqw.date/posts/hugo%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</guid>
       <description>Hugo使用技巧 如何让hugo和typora均能正常显示图片 创建文章时，设置路径为
 hugo new posts/文章标题/index.md 注意：markdown文件必须以index命名
@@ -94,21 +84,17 @@ typora图片设置
 你的文章的目录结构
 hugo常用命令 hugo new posts/文章标题/index.md #新建文章 hugo #生成静态网页 hugo serve #生成静态网页并进行本地预览 </description>
     </item>
-    
     <item>
       <title>国内域名只能使用国内域名注册商的服务器</title>
       <link>https://qvqw.date/posts/%E5%9B%BD%E5%86%85%E5%9F%9F%E5%90%8D%E9%97%AE%E9%A2%98/</link>
       <pubDate>Fri, 01 Dec 2023 19:19:44 +0800</pubDate>
-      
       <guid>https://qvqw.date/posts/%E5%9B%BD%E5%86%85%E5%9F%9F%E5%90%8D%E9%97%AE%E9%A2%98/</guid>
       <description>事件 之前一直把国内域名解析到github的静态网站，最近收到通知，域名必须解析到国内的服务器。 而且由于我的域名是在腾讯云注册的，必须使用腾讯云的服务器，而不是比如阿里云的服务器厂商。 总结，越来越严了</description>
     </item>
-    
     <item>
       <title>使用rock5A解决校园网mac地址限制</title>
       <link>https://qvqw.date/posts/rock5a%E8%A7%A3%E5%86%B3mac%E5%9C%B0%E5%9D%80%E9%99%90%E5%88%B6/</link>
       <pubDate>Tue, 19 Sep 2023 16:03:23 +0800</pubDate>
-      
       <guid>https://qvqw.date/posts/rock5a%E8%A7%A3%E5%86%B3mac%E5%9C%B0%E5%9D%80%E9%99%90%E5%88%B6/</guid>
       <description>材料 rock5A、AX210无线网卡、小米路由器
 rock5A安装系统 系统地址https://github.com/radxa-build/rock-5a/releases
@@ -118,24 +104,19 @@ rock5A安装系统 系统地址https://github.com/radxa-build/rock-5a/releases
 1、首先使用ip addr查看网卡信息
 ```bash 2: eth0: &amp;lt;BROADCAST,MULTICAST,UP,LOWER_UP&amp;gt; mtu 1500 qdisc mq state UP group default qlen 1000 link/ether 66:66:39:b8:f4:d5 brd ff:ff:ff:ff:ff:ff inet 10.10.10.1/24 brd 10.10.10.255 scope global eth0 valid_lft forever preferred_lft forever inet6 fe80::6466:39ff:feb8:f4d5/64 scope link valid_lft forever preferred_lft forever 4: wlan0: &amp;lt;BROADCAST,MULTICAST,UP,LOWER_UP&amp;gt; mtu 1500 qdisc noqueue state UP group default qlen 1000 link/ether 2c:33:58:52:d0:a0 brd ff:ff:ff:ff:ff:ff inet 10.104.54.161/16 brd 10.</description>
     </item>
-    
     <item>
       <title>Hello</title>
       <link>https://qvqw.date/posts/hello/</link>
       <pubDate>Mon, 31 Jul 2023 08:56:28 +0800</pubDate>
-      
       <guid>https://qvqw.date/posts/hello/</guid>
       <description>Start Hello World~</description>
     </item>
-    
     <item>
       <title>使用github搭建网站</title>
       <link>https://qvqw.date/posts/github%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99/</link>
       <pubDate>Mon, 31 Jul 2023 08:56:28 +0800</pubDate>
-      
       <guid>https://qvqw.date/posts/github%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99/</guid>
       <description>该博客基于GitHub page+hugo搭建 </description>
     </item>
-    
   </channel>
 </rss>

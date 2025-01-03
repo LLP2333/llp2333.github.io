@@ -9,7 +9,8 @@
       <url>https://qvqw.date/images/papermod-cover.png</url>
       <link>https://qvqw.date/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://qvqw.date/series/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.115.4</generator>
+    <language>en</language>
+    <atom:link href="https://qvqw.date/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -9,14 +9,14 @@
       <url>https://qvqw.date/images/papermod-cover.png</url>
       <link>https://qvqw.date/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.115.4</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 01 Apr 2024 19:39:06 +0800</lastBuildDate><atom:link href="https://qvqw.date/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Apr 2024 19:39:06 +0800</lastBuildDate>
+    <atom:link href="https://qvqw.date/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo使用技巧</title>
       <link>https://qvqw.date/posts/hugo%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</link>
       <pubDate>Mon, 01 Apr 2024 19:39:06 +0800</pubDate>
-      
       <guid>https://qvqw.date/posts/hugo%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</guid>
       <description>Hugo使用技巧 如何让hugo和typora均能正常显示图片 创建文章时，设置路径为
 hugo new posts/文章标题/index.md 注意：markdown文件必须以index命名
@@ -24,6 +24,5 @@ typora图片设置
 你的文章的目录结构
 hugo常用命令 hugo new posts/文章标题/index.md #新建文章 hugo #生成静态网页 hugo serve #生成静态网页并进行本地预览 </description>
     </item>
-    
   </channel>
 </rss>

@@ -9,14 +9,14 @@
       <url>https://qvqw.date/images/papermod-cover.png</url>
       <link>https://qvqw.date/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.115.4</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Apr 2024 17:35:54 +0800</lastBuildDate><atom:link href="https://qvqw.date/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Apr 2024 17:35:54 +0800</lastBuildDate>
+    <atom:link href="https://qvqw.date/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用cpolar为rock5A进行内网穿透</title>
       <link>https://qvqw.date/posts/%E4%BD%BF%E7%94%A8cpolar%E4%B8%BArock5a%E8%BF%9B%E8%A1%8C%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
       <pubDate>Sat, 13 Apr 2024 17:35:54 +0800</pubDate>
-      
       <guid>https://qvqw.date/posts/%E4%BD%BF%E7%94%A8cpolar%E4%B8%BArock5a%E8%BF%9B%E8%A1%8C%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
       <description>使用 cpolar 为 rock 5A 进行内网穿透 github 上有开源的 frp 项目，如果有一台云服务器的话，用来内网穿透很不错。但是，使用云服务+frp 的方案，开放某个端口，还需要去修改云服务的安全组，比较麻烦。考虑到方便性，我用了 cpolar 做内网穿透。
 注：rock 5A 为 arm 开发板，系统为 debian12（和树莓派、香橙派等 arm 计算机的教程理论上通用）
@@ -27,6 +27,5 @@ cpolar authtoken xxxxxxxxxxxxxxxxxx 设置开机自启动并启动 cpolar 服务
 配置文件 默认的配置文件在
 /usr/local/etc/cpolar/cpolar.yml 补充说明 使用过程中，我发现 cpolar 代理 http 导致了 rock 5A 的 cpu 占用飙升。后续我用了阿里云的服务器+frp 代理了 ssh,cloudflare tunnel 代理 http，cpu 占用几乎忽略不计。因此，建议 cpolar 内网穿透方案仅作备选。</description>
     </item>
-    
   </channel>
 </rss>
