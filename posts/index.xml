@@ -11,8 +11,24 @@
     </image>
     <generator>Hugo -- 0.115.4</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 18 Nov 2024 08:56:28 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jan 2025 14:11:52 +0800</lastBuildDate>
     <atom:link href="https://qvqw.date/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>用go写了个简化hugo文章创建的小工具</title>
+      <link>https://qvqw.date/posts/%E7%94%A8go%E5%86%99%E4%BA%86%E4%B8%AA%E7%AE%80%E5%8C%96hugo%E6%96%87%E7%AB%A0%E5%88%9B%E5%BB%BA%E7%9A%84%E5%B0%8F%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Tue, 07 Jan 2025 14:11:52 +0800</pubDate>
+      <guid>https://qvqw.date/posts/%E7%94%A8go%E5%86%99%E4%BA%86%E4%B8%AA%E7%AE%80%E5%8C%96hugo%E6%96%87%E7%AB%A0%E5%88%9B%E5%BB%BA%E7%9A%84%E5%B0%8F%E5%B7%A5%E5%85%B7/</guid>
+      <description>目前使用hugo作为博客系统，使用typora作为博客的编辑器。书接上文Hugo使用技巧，之前每次都需要在博客根目录执行
+hugo new posts/文章标题/index.md 创建新的文章。感觉很麻烦。所以想写个工具简化这个过程。
+思路 输入文件标题后执行创建文章的命令，然后生成新的文章的快捷方式，方便使用typora进行编辑。
+代码 使用Claude生成的，很方便。
+如果是windows平台，使用
+go build -o HugoHelper.exe main.go 进行编译。
+使用前需要配置blog环境变量，key为blog,value为你的项目的根路径
+比如我的根目录是C:\UGit\qvqw.date
+代码
+package main import ( &amp;#34;bufio&amp;#34; &amp;#34;fmt&amp;#34; &amp;#34;os&amp;#34; &amp;#34;os/exec&amp;#34; &amp;#34;path/filepath&amp;#34; &amp;#34;strings&amp;#34; ) func main() { // 获取当前程序执行路径 execPath, err := os.Getwd() if err != nil { fmt.Printf(&amp;#34;错误: 获取当前路径失败: %v\n&amp;#34;, err) os.Exit(1) } // 从环境变量获取博客路径 blogPath := os.Getenv(&amp;#34;blog&amp;#34;) if blogPath == &amp;#34;&amp;#34; { fmt.Println(&amp;#34;错误: 环境变量 &amp;#39;blog&amp;#39; 未设置&amp;#34;) os.Exit(1) } // 验证博客路径是否存在 if _, err := os.</description>
+    </item>
     <item>
       <title>一文搞懂如何在 Spring Boot 中正确使用 JPA</title>
       <link>https://qvqw.date/posts/%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8Bspring-jpa/</link>

@@ -2,22 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://qvqw.date/archives/2025/</loc>
+    <lastmod>2025-01-07T14:11:52+08:00</lastmod>
+  </url><url>
+    <loc>https://qvqw.date/archives/</loc>
+    <lastmod>2025-01-07T14:11:52+08:00</lastmod>
+  </url><url>
+    <loc>https://qvqw.date/categories/</loc>
+    <lastmod>2025-01-07T14:11:52+08:00</lastmod>
+  </url><url>
+    <loc>https://qvqw.date/categories/go/</loc>
+    <lastmod>2025-01-07T14:11:52+08:00</lastmod>
+  </url><url>
+    <loc>https://qvqw.date/categories/hugo/</loc>
+    <lastmod>2025-01-07T14:11:52+08:00</lastmod>
+  </url><url>
     <loc>https://qvqw.date/</loc>
-    <lastmod>2024-11-18T08:56:28+08:00</lastmod>
+    <lastmod>2025-01-07T14:11:52+08:00</lastmod>
   </url><url>
     <loc>https://qvqw.date/posts/</loc>
-    <lastmod>2024-11-18T08:56:28+08:00</lastmod>
+    <lastmod>2025-01-07T14:11:52+08:00</lastmod>
+  </url><url>
+    <loc>https://qvqw.date/posts/%E7%94%A8go%E5%86%99%E4%BA%86%E4%B8%AA%E7%AE%80%E5%8C%96hugo%E6%96%87%E7%AB%A0%E5%88%9B%E5%BB%BA%E7%9A%84%E5%B0%8F%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2025-01-07T14:11:52+08:00</lastmod>
   </url><url>
     <loc>https://qvqw.date/posts/%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8Bspring-jpa/</loc>
     <lastmod>2024-11-18T08:56:28+08:00</lastmod>
   </url><url>
     <loc>https://qvqw.date/archives/2024/</loc>
-    <lastmod>2024-04-13T17:35:54+08:00</lastmod>
-  </url><url>
-    <loc>https://qvqw.date/archives/</loc>
-    <lastmod>2024-04-13T17:35:54+08:00</lastmod>
-  </url><url>
-    <loc>https://qvqw.date/categories/</loc>
     <lastmod>2024-04-13T17:35:54+08:00</lastmod>
   </url><url>
     <loc>https://qvqw.date/categories/linux/</loc>
