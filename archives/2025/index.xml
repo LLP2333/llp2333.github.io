@@ -11,8 +11,19 @@
     </image>
     <generator>Hugo -- 0.115.4</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Jan 2025 10:14:16 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jan 2025 16:06:02 +0800</lastBuildDate>
     <atom:link href="https://qvqw.date/archives/2025/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java的ResourceBundle读取配置文件路径</title>
+      <link>https://qvqw.date/posts/java%E7%9A%84resourcebundle%E8%AF%BB%E5%8F%96%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84/</link>
+      <pubDate>Wed, 08 Jan 2025 16:06:02 +0800</pubDate>
+      <guid>https://qvqw.date/posts/java%E7%9A%84resourcebundle%E8%AF%BB%E5%8F%96%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84/</guid>
+      <description>当你使用
+// 1. 创建或加载 ResourceBundle ResourceBundle bundle = ResourceBundle.getBundle(&amp;#34;messages&amp;#34;); // 从 classpath 加载 messages.properties // 2. 使用getString()获取字符串值 String value = bundle.getString(&amp;#34;key.name&amp;#34;); 读取文件时 代码默认会读取src/main/resources/messages.properties
+src/main/resources/messages.properties // 默认 src/main/resources/messages_zh.properties // 中文 src/main/resources/messages_en.properties // 英文 样例配置文件
+key.name=值 welcome.message=欢迎 error.code=500 如果想指定读取的文件
+// 指定英文 Locale Locale enLocale = new Locale(&amp;#34;en&amp;#34;); // 或者直接用 Locale.ENGLISH // 加载英文资源包 ResourceBundle bundle = ResourceBundle.getBundle(&amp;#34;messages&amp;#34;, enLocale); // 获取英文值 String value = bundle.getString(&amp;#34;key.name&amp;#34;); </description>
+    </item>
     <item>
       <title>某云办公应用api存在IP白名单绕过风险</title>
       <link>https://qvqw.date/posts/%E6%9F%90%E4%BA%91%E5%8A%9E%E5%85%AC%E5%BA%94%E7%94%A8api%E5%AD%98%E5%9C%A8ip%E7%99%BD%E5%90%8D%E5%8D%95%E7%BB%95%E8%BF%87%E9%A3%8E%E9%99%A9/</link>
