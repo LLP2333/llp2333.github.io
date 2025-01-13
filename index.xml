@@ -11,8 +11,17 @@
     </image>
     <generator>Hugo -- 0.115.4</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Jan 2025 16:06:02 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jan 2025 13:42:02 +0800</lastBuildDate>
     <atom:link href="https://qvqw.date/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用AspectJ拦截第三方SDK请求</title>
+      <link>https://qvqw.date/posts/%E4%BD%BF%E7%94%A8aspectj%E6%8B%A6%E6%88%AA%E7%AC%AC%E4%B8%89%E6%96%B9sdk%E8%AF%B7%E6%B1%82/</link>
+      <pubDate>Fri, 10 Jan 2025 13:42:02 +0800</pubDate>
+      <guid>https://qvqw.date/posts/%E4%BD%BF%E7%94%A8aspectj%E6%8B%A6%E6%88%AA%E7%AC%AC%E4%B8%89%E6%96%B9sdk%E8%AF%B7%E6%B1%82/</guid>
+      <description>最近使用一个第三方的SDK来请求数据，但是请求的服务器对ip有白名单限制，SDK使用的apache的commons-httpclient: 3.1
+发送请求。于是尝试使用ApectJ运行时织入，拦截发送HTTP请求的代码，修改参数.
+依赖(用的1.9.19版本) &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.aspectj&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;aspectjrt&amp;lt;/artifactId&amp;gt; &amp;lt;scope&amp;gt;runtime&amp;lt;/scope&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.aspectj&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;aspectjweaver&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; maven插件 &amp;lt;plugin&amp;gt; &amp;lt;groupId&amp;gt;org.codehaus.mojo&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;aspectj-maven-plugin&amp;lt;/artifactId&amp;gt; &amp;lt;executions&amp;gt; &amp;lt;execution&amp;gt; &amp;lt;goals&amp;gt; &amp;lt;goal&amp;gt;compile&amp;lt;/goal&amp;gt; &amp;lt;/goals&amp;gt; &amp;lt;/execution&amp;gt; &amp;lt;/executions&amp;gt; &amp;lt;/plugin&amp;gt; 切面 import org.apache.commons.httpclient.HttpMethod; import org.aspectj.lang.ProceedingJoinPoint; import org.aspectj.lang.annotation.Around; import org.aspectj.lang.annotation.Aspect; import org.springframework.stereotype.Component; @Aspect @Component public class HttpClientAspect { public static HttpClientAspect aspectOf() { return new HttpClientAspect(); } @Around(&amp;#34;execution(* org.apache.commons.httpclient.HttpClient.executeMethod(..))&amp;#34;) public Object aroundHttpExecution(ProceedingJoinPoint joinPoint) throws Throwable { System.out.println(&amp;#34;======================================&amp;#34;); Object[] args = joinPoint.getArgs(); // 获取HttpMethod参数 if (args != null &amp;amp;&amp;amp; args.</description>
+    </item>
     <item>
       <title>Java的ResourceBundle读取配置文件路径</title>
       <link>https://qvqw.date/posts/java%E7%9A%84resourcebundle%E8%AF%BB%E5%8F%96%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84/</link>
