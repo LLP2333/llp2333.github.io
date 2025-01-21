@@ -11,8 +11,18 @@
     </image>
     <generator>Hugo -- 0.115.4</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 20 Jan 2025 10:41:12 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jan 2025 09:12:14 +0800</lastBuildDate>
     <atom:link href="https://qvqw.date/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用Cloudflare WARP 解锁Chatgpt</title>
+      <link>https://qvqw.date/posts/%E4%BD%BF%E7%94%A8clouflare-warp-%E8%A7%A3%E9%94%81chatgpt/</link>
+      <pubDate>Tue, 21 Jan 2025 09:12:14 +0800</pubDate>
+      <guid>https://qvqw.date/posts/%E4%BD%BF%E7%94%A8clouflare-warp-%E8%A7%A3%E9%94%81chatgpt/</guid>
+      <description>Chatgpt对ip有较为严格的限制，使用Cloudflare WARP可以隐藏服务器的真实ip，解除访问限制。
+安装Cloudflare WARP 官方文档
+# Add cloudflare gpg key curl -fsSL https://pkg.cloudflareclient.com/pubkey.gpg | sudo gpg --yes --dearmor --output /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg # Add this repo to your apt repositories echo &amp;#34;deb [signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyring.gpg] https://pkg.cloudflareclient.com/ $(lsb_release -cs) main&amp;#34; | sudo tee /etc/apt/sources.list.d/cloudflare-client.list # Install sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install cloudflare-warp 设置cloudflare warp 一定要把mode设置为proxy,然后连接。否则将无法使用ssh访问服务器。
+warp-cli registration new #注册 warp-cli mode proxy # 设置代理模式为socks代理 warp-cli proxy port 40000 #设置代理端口40000 warp-cli connect # 连接 xray配置 inbounds 要开启 sniffing</description>
+    </item>
     <item>
       <title>使用sni 代理解决服务器无法直接联网的问题</title>
       <link>https://qvqw.date/posts/%E4%BD%BF%E7%94%A8sni-%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%97%A0%E6%B3%95%E7%9B%B4%E6%8E%A5%E8%81%94%E7%BD%91%E7%9A%84%E9%97%AE%E9%A2%98/</link>
