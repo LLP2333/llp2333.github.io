@@ -11,8 +11,23 @@
     </image>
     <generator>Hugo -- 0.115.4</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 20 Jan 2025 10:41:12 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 17 Feb 2025 18:18:33 +0800</lastBuildDate>
     <atom:link href="https://qvqw.date/categories/%E5%90%8E%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>尝试在windows设置端口转发以及反向代理</title>
+      <link>https://qvqw.date/posts/%E5%B0%9D%E8%AF%95%E5%9C%A8windows%E8%AE%BE%E7%BD%AE%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91%E4%BB%A5%E5%8F%8A%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</link>
+      <pubDate>Mon, 17 Feb 2025 18:18:33 +0800</pubDate>
+      <guid>https://qvqw.date/posts/%E5%B0%9D%E8%AF%95%E5%9C%A8windows%E8%AE%BE%E7%BD%AE%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91%E4%BB%A5%E5%8F%8A%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</guid>
+      <description>最近考虑买一台MacBook Pro，当作新的生产力。但是目前的开发又离不开X86的windows平台，考虑使用mac进行代码开发运行，使用windows进行调试。项目中用到的数据库以及第三方的接口需要使用vpn访问内网，且vpn只能登录一个设备，所以考虑在windows上登录vpn，系统运行需要用到的数据库以及第三方接口都使用windows电脑进行转发。
+数据库转发(转发tcp) 我用的是windows自带的portproxy功能
+使用以下命令即可实现端口转发
+netsh interface portproxy add v4tov4 listenport=[监听端口号] listenaddress=[本地IP地址] connectport=[目标端口号] connectaddress=[目标IP地址] 验证端口转发是否配置成功
+netsh interface portproxy show all 如果想删除某个端口转发规则
+netsh interface portproxy delete v4tov4 listenport=[监听端口号] listenaddress=[本地IP地址] 第三方接口转发 我使用的是caddy代理,只需要一行命令即可
+caddy reverse-proxy --from 本机ip --to 第三方接口的内网ip 踩坑 尝试过让windows登vpn，然后开热点给另一个电脑。经测试另一台电脑连上热点只能访问外网，查资料说windows的个人热点直接走物理网卡转发，不会走代理。
+尝试用caddy代理数据库的tcp连接，理论上可以使用caddy的第三方模块实现代理tcp，但是没有研究明白，放弃了，感觉caddy还是代理http请求更合适一些。
+结尾 目前只是做了数据库以及第三方接口的代理，等过一段时间买到新电脑了，再继续折腾。生命不息息，折腾不止😂</description>
+    </item>
     <item>
       <title>使用sni 代理解决服务器无法直接联网的问题</title>
       <link>https://qvqw.date/posts/%E4%BD%BF%E7%94%A8sni-%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%97%A0%E6%B3%95%E7%9B%B4%E6%8E%A5%E8%81%94%E7%BD%91%E7%9A%84%E9%97%AE%E9%A2%98/</link>
