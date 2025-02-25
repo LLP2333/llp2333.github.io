@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.115.4</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 17 Feb 2025 18:18:33 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 25 Feb 2025 18:08:52 +0800</lastBuildDate>
     <atom:link href="https://qvqw.date/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>随笔</title>
+      <link>https://qvqw.date/categories/%E9%9A%8F%E7%AC%94/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://qvqw.date/categories/%E9%9A%8F%E7%AC%94/</guid>
+      <description></description>
+    </item>
     <item>
       <title>后端</title>
       <link>https://qvqw.date/categories/%E5%90%8E%E7%AB%AF/</link>
