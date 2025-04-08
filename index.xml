@@ -11,8 +11,20 @@
     </image>
     <generator>Hugo -- 0.115.4</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 25 Feb 2025 18:08:52 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 08 Apr 2025 18:27:15 +0800</lastBuildDate>
     <atom:link href="https://qvqw.date/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>macOS上使用小米互联互通共享小米手机屏幕</title>
+      <link>https://qvqw.date/posts/acos%E4%B8%8A%E4%BD%BF%E7%94%A8%E5%B0%8F%E7%B1%B3%E4%BA%92%E8%81%94%E4%BA%92%E9%80%9A%E5%B0%8F%E7%B1%B3%E6%89%8B%E6%9C%BA%E5%B1%8F%E5%B9%95/</link>
+      <pubDate>Tue, 08 Apr 2025 18:27:15 +0800</pubDate>
+      <guid>https://qvqw.date/posts/acos%E4%B8%8A%E4%BD%BF%E7%94%A8%E5%B0%8F%E7%B1%B3%E4%BA%92%E8%81%94%E4%BA%92%E9%80%9A%E5%B0%8F%E7%B1%B3%E6%89%8B%E6%9C%BA%E5%B1%8F%E5%B9%95/</guid>
+      <description>最近把我的12turbo升级到了HyperOS 2.0,想试一试小米的互联互通功能.
+小米互联互通MAC端下载地址 https://hyperos.mi.com/continuity/abilities/ab0016
+遇到的问题 使用互联互联互通仅能发送文件,但是不能共享屏幕.
+解决方案 后来发现,小米的互联互通功能限制地区,必须是中国大陆.而我的mac系统设置的是美区英文.如果想使用屏幕共享,要么在设置里将地区改为中国大陆.
+系统的地区设置会影响全局,如果想仅对小米互联互通设置地区,可以执行
+defaults write com.xiaomi.hyperConnect AppleLocale -string &amp;#34;zh_CN&amp;#34; </description>
+    </item>
     <item>
       <title>摸鱼~</title>
       <link>https://qvqw.date/posts/%E6%83%B3%E8%A6%81%E6%91%B8%E9%B1%BC/</link>
