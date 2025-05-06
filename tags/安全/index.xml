@@ -9,7 +9,7 @@
       <url>https://qvqw.date/images/papermod-cover.png</url>
       <link>https://qvqw.date/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.115.4</generator>
+    <generator>Hugo -- 0.147.1</generator>
     <language>en</language>
     <lastBuildDate>Wed, 08 Jan 2025 10:14:16 +0800</lastBuildDate>
     <atom:link href="https://qvqw.date/tags/%E5%AE%89%E5%85%A8/index.xml" rel="self" type="application/rss+xml" />
@@ -18,14 +18,37 @@
       <link>https://qvqw.date/posts/%E6%9F%90%E4%BA%91%E5%8A%9E%E5%85%AC%E5%BA%94%E7%94%A8api%E5%AD%98%E5%9C%A8ip%E7%99%BD%E5%90%8D%E5%8D%95%E7%BB%95%E8%BF%87%E9%A3%8E%E9%99%A9/</link>
       <pubDate>Wed, 08 Jan 2025 10:14:16 +0800</pubDate>
       <guid>https://qvqw.date/posts/%E6%9F%90%E4%BA%91%E5%8A%9E%E5%85%AC%E5%BA%94%E7%94%A8api%E5%AD%98%E5%9C%A8ip%E7%99%BD%E5%90%8D%E5%8D%95%E7%BB%95%E8%BF%87%E9%A3%8E%E9%99%A9/</guid>
-      <description>最近在做一个消息推送企业某信的需求，使用的不是官方的api,而是和企业某信可以集成的云办公平台的api。由于api有ip白名单限制，导致我必须在特定化网络环境下发请求，测试很麻烦，所以想测试一下能不能绕过限制。 想要绕过限制，首先要知道服务器如何获取发送者的ip。
-服务器如何获取请求者ip 获取请求者 IP 本质上就两个来源：
-直接从 IP 数据包获取 这就是 HttpServletRequest的getRemoteAddr() 的工作原理，获取的是直接与服务器建立 TCP 连接的客户端 IP，在没有代理的情况下,这就是真实的客户端 IP 从 HTTP 请求头获取 常见的请求头有: X-Forwarded-For X-Real-IP Proxy-Client-IP WL-Proxy-Client-IP 测试 这里我使用了postman伪造了请求头X-Forwarded-For，经过测试，理论上只要知道正确的ip，就可以让ip白名单功能失效。
-如果你有服务器的访问权限，但是只知道服务器的内网ip，可以尝试
-curl ifconfig.me 然后就能得到服务器的公网ip了
-安全建议 改用网络层的源IP地址(TCP/IP报文中的source IP)进行验证
-如果必须使用代理转发,建议只信任内部代理服务器传递的XFF头
-吐槽 某云办公平台必须付费才能获得访问api的密钥，并且密钥只有一个，测试只能直接在正式系统测</description>
+      <description>&lt;p&gt;最近在做一个消息推送企业某信的需求，使用的不是官方的api,而是和企业某信可以集成的云办公平台的api。由于api有ip白名单限制，导致我必须在特定化网络环境下发请求，测试很麻烦，所以想测试一下能不能绕过限制。
+想要绕过限制，首先要知道服务器如何获取发送者的ip。&lt;/p&gt;
+&lt;h2 id=&#34;服务器如何获取请求者ip&#34;&gt;服务器如何获取请求者ip&lt;/h2&gt;
+&lt;p&gt;获取请求者 IP 本质上就两个来源：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;直接从 IP 数据包获取
+这就是 HttpServletRequest的getRemoteAddr() 的工作原理，获取的是直接与服务器建立 TCP 连接的客户端 IP，在没有代理的情况下,这就是真实的客户端 IP&lt;/li&gt;
+&lt;li&gt;从 HTTP 请求头获取
+常见的请求头有:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;X-Forwarded-For
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;X-Real-IP
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Proxy-Client-IP
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;WL-Proxy-Client-IP
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;测试&#34;&gt;测试&lt;/h2&gt;
+&lt;p&gt;这里我使用了postman伪造了请求头X-Forwarded-For，经过测试，理论上只要知道正确的ip，就可以让ip白名单功能失效。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20250108103243598&#34; loading=&#34;lazy&#34; src=&#34;https://qvqw.date/posts/%E6%9F%90%E4%BA%91%E5%8A%9E%E5%85%AC%E5%BA%94%E7%94%A8api%E5%AD%98%E5%9C%A8ip%E7%99%BD%E5%90%8D%E5%8D%95%E7%BB%95%E8%BF%87%E9%A3%8E%E9%99%A9/index.assets/image-20250108103243598.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;如果你有服务器的访问权限，但是只知道服务器的内网ip，可以尝试&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl ifconfig.me
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然后就能得到服务器的公网ip了&lt;/p&gt;
+&lt;h2 id=&#34;安全建议&#34;&gt;安全建议&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;改用网络层的源IP地址(TCP/IP报文中的source IP)进行验证&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果必须使用代理转发,建议只信任内部代理服务器传递的XFF头&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;吐槽&#34;&gt;吐槽&lt;/h2&gt;
+&lt;p&gt;某云办公平台必须付费才能获得访问api的密钥，并且密钥只有一个，测试只能直接在正式系统测&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

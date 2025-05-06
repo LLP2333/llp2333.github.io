@@ -9,7 +9,7 @@
       <url>https://qvqw.date/images/papermod-cover.png</url>
       <link>https://qvqw.date/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.115.4</generator>
+    <generator>Hugo -- 0.147.1</generator>
     <language>en</language>
     <lastBuildDate>Sat, 06 Apr 2024 17:23:56 +0800</lastBuildDate>
     <atom:link href="https://qvqw.date/tags/%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,9 @@
       <link>https://qvqw.date/posts/%E5%9F%BA%E4%BA%8Es3%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E6%88%96%E8%80%85%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%A4%B9/</link>
       <pubDate>Sat, 06 Apr 2024 17:23:56 +0800</pubDate>
       <guid>https://qvqw.date/posts/%E5%9F%BA%E4%BA%8Es3%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E6%88%96%E8%80%85%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%A4%B9/</guid>
-      <description>基于s3协议的对象存储如何创建或者删除文件夹 ​ 首先我们必须明确的是，对象存储没有文件 夹的概念，所谓的文件夹只是文件的前缀
-参考链接https://www.codemzy.com/blog/delete-s3-folder-nodejs</description>
+      <description>&lt;h1 id=&#34;基于s3协议的对象存储如何创建或者删除文件夹&#34;&gt;基于s3协议的对象存储如何创建或者删除文件夹&lt;/h1&gt;
+&lt;p&gt;​    首先我们必须明确的是，对象存储没有文件 夹的概念，所谓的文件夹只是文件的前缀&lt;/p&gt;
+&lt;p&gt;参考链接https://www.codemzy.com/blog/delete-s3-folder-nodejs&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

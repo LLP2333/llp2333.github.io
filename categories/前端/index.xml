@@ -9,16 +9,108 @@
       <url>https://qvqw.date/images/papermod-cover.png</url>
       <link>https://qvqw.date/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.115.4</generator>
+    <generator>Hugo -- 0.147.1</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 06 Apr 2024 20:29:58 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 06 May 2025 17:17:27 +0800</lastBuildDate>
     <atom:link href="https://qvqw.date/categories/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>为bob翻译写一个chrome插件实现划词翻译</title>
+      <link>https://qvqw.date/posts/%E4%B8%BAbob%E7%BF%BB%E8%AF%91%E5%86%99%E4%B8%80%E4%B8%AAchrome%E6%8F%92%E4%BB%B6%E5%AE%9E%E7%8E%B0%E5%88%92%E8%AF%8D%E7%BF%BB%E8%AF%91/</link>
+      <pubDate>Tue, 06 May 2025 17:17:27 +0800</pubDate>
+      <guid>https://qvqw.date/posts/%E4%B8%BAbob%E7%BF%BB%E8%AF%91%E5%86%99%E4%B8%80%E4%B8%AAchrome%E6%8F%92%E4%BB%B6%E5%AE%9E%E7%8E%B0%E5%88%92%E8%AF%8D%E7%BF%BB%E8%AF%91/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;很喜欢mac平台的bob翻译,但是bob翻译想实现选中文字后点击划词翻译,作者建议使用popclip插件.popclip要25刀,对于刚买完macbook电脑的我来说还是太贵了.看到作者支持AppleScript调用bob翻译软件,且我的划词翻译的需求主要是在浏览器,考虑自己实现一个这样的chrome插件.&lt;/p&gt;
+&lt;h2 id=&#34;实现&#34;&gt;实现&lt;/h2&gt;
+&lt;p&gt;我先问了claude ,chrome插件调用本地的翻译软件是否具有可行性,了解到chrome浏览器插件支持Native messaging.
+&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Native_messaging&#34;&gt;MCN参考文档&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://developer.chrome.com/docs/extensions/develop/concepts/native-messaging&#34;&gt;chrome参考文档&lt;/a&gt;
+然后我从MCN相关的示例代码实现了本地python代码和chrome插件通信,后面重构为go语言实现,具体步骤就是划词后把选中的文字发给相关go代码,然后调用AppleScript实现翻译功能.
+原先写的代码是manifest v2的,我参考了
+&lt;a href=&#34;https://developer.chrome.com/docs/extensions/develop/migrate/to-service-workers&#34;&gt;https://developer.chrome.com/docs/extensions/develop/migrate/to-service-workers&lt;/a&gt;
+将版本升级到了v3.&lt;/p&gt;
+&lt;h2 id=&#34;项目地址&#34;&gt;项目地址&lt;/h2&gt;
+&lt;p&gt;项目使用MIT开源在GitHub&lt;a href=&#34;https://github.com/LLP2333/TranslateWithBob&#34;&gt;点此访问&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;chrome插件&lt;a href=&#34;https://chromewebstore.google.com/detail/translate-with-bob/oaknpfbbebnpkhfnckphnenmhnnmaifj&#34;&gt;安装&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;注意&#34;&gt;注意&lt;/h2&gt;
+&lt;p&gt;仅安装chrome插件不能正常工作,请仔细阅读项目文档了解使用方式.&lt;/p&gt;
+&lt;h2 id=&#34;结语&#34;&gt;结语&lt;/h2&gt;
+&lt;p&gt;有好的想法就要立刻去实现它.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>前端路线</title>
       <link>https://qvqw.date/posts/%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%BA%BF/</link>
       <pubDate>Sat, 06 Apr 2024 20:29:58 +0800</pubDate>
       <guid>https://qvqw.date/posts/%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%BA%BF/</guid>
-      <description>前端路线 0 Roadmap 新手 进阶 1 HTML &amp;amp; CSS freecodecamp网站 里的 『响应式网页设计认证』 css学习：learnlayout网站 flex 布局： 学习：vgee.cn网站 练习：flexboxfroggy 2 JavaScript 《JavaScript权威指南》第六版 （2012年出版）PDF 《JavaScript 高级程序设计》（2019年出版） JavaScript 教程：网址 阮一峰的 ES6 教程 3 框架 React Vue 4 构建工具 《前端工程化》基于Vue3 教材：网址 Webpack Vite 5 大而全的教程 微软的前端教程：github网址 coderwhy 大前端系列教程 各种教程的网站：质量挺高（英语） frontendmasters网址 MDN 网址：大而全的文档 ChatGPT：升级到 plus 版本，打开使用网络内容的设置 6 具体步骤 基础知识（a、b可同步进行） HTML &amp;amp; CSS JavaScript 学习框架 React：更适合作为第一个框架学习 Vue：使得用起来更方便，但不利于新人了解具体实现原理 构建工具 在学习框架时也会用到构建工具 学完框架后再系统性学习 抄一个网站 在学完 HTML &amp;amp; CSS 时可以抄静态页面 学完 JavaScript、框架后可以抄整个站 </description>
+      <description>&lt;h1 id=&#34;前端路线&#34;&gt;前端路线&lt;/h1&gt;
+&lt;h2 id=&#34;0-roadmap&#34;&gt;0 Roadmap&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://roadmap.sh/frontend?r=frontend-beginner&#34;&gt;新手&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://roadmap.sh/frontend&#34;&gt;进阶&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;1-html--css&#34;&gt;1 HTML &amp;amp; CSS&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.freecodecamp.org/chinese/learn/&#34;&gt;freecodecamp网站&lt;/a&gt; 里的 『响应式网页设计认证』&lt;/li&gt;
+&lt;li&gt;css学习：&lt;a href=&#34;https://zh.learnlayout.com/&#34;&gt;learnlayout网站&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;flex 布局：
+&lt;ol&gt;
+&lt;li&gt;学习：&lt;a href=&#34;https://static.vgee.cn/static/index.html&#34;&gt;vgee.cn网站&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;练习：flexboxfroggy&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;2-javascript&#34;&gt;2 JavaScript&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;《JavaScript权威指南》第六版 （2012年出版）&lt;a href=&#34;https://kingyinliang.github.io/PDF/JavaScript%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97%EF%BC%88%E7%AC%AC6%E7%89%88%EF%BC%89.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;《JavaScript 高级程序设计》（2019年出版）&lt;/li&gt;
+&lt;li&gt;JavaScript 教程：&lt;a href=&#34;https://zh.javascript.info/&#34;&gt;网址&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;阮一峰的 ES6 教程&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;3-框架&#34;&gt;3 框架&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;React&lt;/li&gt;
+&lt;li&gt;Vue&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;4-构建工具&#34;&gt;4 构建工具&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;《前端工程化》基于Vue3 教材：&lt;a href=&#34;https://vue3.chengpeiquan.com/&#34;&gt;网址&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Webpack&lt;/li&gt;
+&lt;li&gt;Vite&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;5-大而全的教程&#34;&gt;5 大而全的教程&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;微软的前端教程：&lt;a href=&#34;https://github.com/microsoft/Web-Dev-For-Beginners&#34;&gt;github网址&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;coderwhy 大前端系列教程&lt;/li&gt;
+&lt;li&gt;各种教程的网站：质量挺高（英语） &lt;a href=&#34;https://frontendmasters.com/courses/&#34;&gt;frontendmasters网址&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;MDN &lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn&#34;&gt;网址&lt;/a&gt;：大而全的文档&lt;/li&gt;
+&lt;li&gt;ChatGPT：升级到 plus 版本，打开使用网络内容的设置&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;6-具体步骤&#34;&gt;6 具体步骤&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;基础知识（a、b可同步进行）
+&lt;ol&gt;
+&lt;li&gt;HTML &amp;amp; CSS&lt;/li&gt;
+&lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;学习框架
+&lt;ol&gt;
+&lt;li&gt;React：更适合作为第一个框架学习&lt;/li&gt;
+&lt;li&gt;Vue：使得用起来更方便，但不利于新人了解具体实现原理&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;构建工具
+&lt;ol&gt;
+&lt;li&gt;在学习框架时也会用到构建工具&lt;/li&gt;
+&lt;li&gt;学完框架后再系统性学习&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;抄一个网站
+&lt;ol&gt;
+&lt;li&gt;在学完 HTML &amp;amp; CSS 时可以抄静态页面&lt;/li&gt;
+&lt;li&gt;学完 JavaScript、框架后可以抄整个站&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description>
     </item>
   </channel>
 </rss>

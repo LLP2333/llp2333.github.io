@@ -9,7 +9,7 @@
       <url>https://qvqw.date/images/papermod-cover.png</url>
       <link>https://qvqw.date/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.115.4</generator>
+    <generator>Hugo -- 0.147.1</generator>
     <language>en</language>
     <lastBuildDate>Fri, 01 Dec 2023 19:19:44 +0800</lastBuildDate>
     <atom:link href="https://qvqw.date/tags/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/index.xml" rel="self" type="application/rss+xml" />
@@ -18,7 +18,10 @@
       <link>https://qvqw.date/posts/%E5%9B%BD%E5%86%85%E5%9F%9F%E5%90%8D%E9%97%AE%E9%A2%98/</link>
       <pubDate>Fri, 01 Dec 2023 19:19:44 +0800</pubDate>
       <guid>https://qvqw.date/posts/%E5%9B%BD%E5%86%85%E5%9F%9F%E5%90%8D%E9%97%AE%E9%A2%98/</guid>
-      <description>事件 之前一直把国内域名解析到github的静态网站，最近收到通知，域名必须解析到国内的服务器。 而且由于我的域名是在腾讯云注册的，必须使用腾讯云的服务器，而不是比如阿里云的服务器厂商。 总结，越来越严了</description>
+      <description>&lt;h2 id=&#34;事件&#34;&gt;事件&lt;/h2&gt;
+&lt;p&gt;之前一直把国内域名解析到github的静态网站，最近收到通知，域名必须解析到国内的服务器。
+而且由于我的域名是在腾讯云注册的，必须使用腾讯云的服务器，而不是比如阿里云的服务器厂商。
+总结，越来越严了&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

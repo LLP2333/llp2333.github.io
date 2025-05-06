@@ -9,7 +9,7 @@
       <url>https://qvqw.date/images/papermod-cover.png</url>
       <link>https://qvqw.date/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.115.4</generator>
+    <generator>Hugo -- 0.147.1</generator>
     <language>en</language>
     <lastBuildDate>Mon, 17 Feb 2025 18:18:33 +0800</lastBuildDate>
     <atom:link href="https://qvqw.date/categories/%E5%90%8E%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
@@ -18,33 +18,66 @@
       <link>https://qvqw.date/posts/%E5%B0%9D%E8%AF%95%E5%9C%A8windows%E8%AE%BE%E7%BD%AE%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91%E4%BB%A5%E5%8F%8A%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</link>
       <pubDate>Mon, 17 Feb 2025 18:18:33 +0800</pubDate>
       <guid>https://qvqw.date/posts/%E5%B0%9D%E8%AF%95%E5%9C%A8windows%E8%AE%BE%E7%BD%AE%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91%E4%BB%A5%E5%8F%8A%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</guid>
-      <description>最近考虑买一台MacBook Pro，当作新的生产力。但是目前的开发又离不开X86的windows平台，考虑使用mac进行代码开发运行，使用windows进行调试。项目中用到的数据库以及第三方的接口需要使用vpn访问内网，且vpn只能登录一个设备，所以考虑在windows上登录vpn，系统运行需要用到的数据库以及第三方接口都使用windows电脑进行转发。
-数据库转发(转发tcp) 我用的是windows自带的portproxy功能
-使用以下命令即可实现端口转发
-netsh interface portproxy add v4tov4 listenport=[监听端口号] listenaddress=[本地IP地址] connectport=[目标端口号] connectaddress=[目标IP地址] 验证端口转发是否配置成功
-netsh interface portproxy show all 如果想删除某个端口转发规则
-netsh interface portproxy delete v4tov4 listenport=[监听端口号] listenaddress=[本地IP地址] 第三方接口转发 我使用的是caddy代理,只需要一行命令即可
-caddy reverse-proxy --from 本机ip --to 第三方接口的内网ip 踩坑 尝试过让windows登vpn，然后开热点给另一个电脑。经测试另一台电脑连上热点只能访问外网，查资料说windows的个人热点直接走物理网卡转发，不会走代理。
-尝试用caddy代理数据库的tcp连接，理论上可以使用caddy的第三方模块实现代理tcp，但是没有研究明白，放弃了，感觉caddy还是代理http请求更合适一些。
-结尾 目前只是做了数据库以及第三方接口的代理，等过一段时间买到新电脑了，再继续折腾。生命不息息，折腾不止😂</description>
+      <description>&lt;p&gt;最近考虑买一台MacBook Pro，当作新的生产力。但是目前的开发又离不开X86的windows平台，考虑使用mac进行代码开发运行，使用windows进行调试。项目中用到的数据库以及第三方的接口需要使用vpn访问内网，且vpn只能登录一个设备，所以考虑在windows上登录vpn，系统运行需要用到的数据库以及第三方接口都使用windows电脑进行转发。&lt;/p&gt;
+&lt;h2 id=&#34;数据库转发转发tcp&#34;&gt;数据库转发(转发tcp)&lt;/h2&gt;
+&lt;p&gt;我用的是windows自带的portproxy功能&lt;/p&gt;
+&lt;p&gt;使用以下命令即可实现端口转发&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;netsh interface portproxy add v4tov4 &lt;span class=&#34;nv&#34;&gt;listenport&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=[&lt;/span&gt;监听端口号&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;listenaddress&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=[&lt;/span&gt;本地IP地址&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;connectport&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=[&lt;/span&gt;目标端口号&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;connectaddress&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=[&lt;/span&gt;目标IP地址&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;验证端口转发是否配置成功&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;netsh interface portproxy show all
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果想删除某个端口转发规则&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;netsh interface portproxy delete v4tov4 &lt;span class=&#34;nv&#34;&gt;listenport&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=[&lt;/span&gt;监听端口号&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;listenaddress&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=[&lt;/span&gt;本地IP地址&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;第三方接口转发&#34;&gt;第三方接口转发&lt;/h2&gt;
+&lt;p&gt;我使用的是caddy代理,只需要一行命令即可&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; caddy reverse-proxy --from 本机ip --to 第三方接口的内网ip
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;踩坑&#34;&gt;踩坑&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;尝试过让windows登vpn，然后开热点给另一个电脑。经测试另一台电脑连上热点只能访问外网，查资料说windows的个人热点直接走物理网卡转发，不会走代理。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;尝试用caddy代理数据库的tcp连接，理论上可以使用caddy的第三方模块实现代理tcp，但是没有研究明白，放弃了，感觉caddy还是代理http请求更合适一些。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;结尾&#34;&gt;结尾&lt;/h2&gt;
+&lt;p&gt;目前只是做了数据库以及第三方接口的代理，等过一段时间买到新电脑了，再继续折腾。生命不息息，折腾不止😂&lt;/p&gt;</description>
     </item>
     <item>
       <title>使用sni 代理解决服务器无法直接联网的问题</title>
       <link>https://qvqw.date/posts/%E4%BD%BF%E7%94%A8sni-%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%97%A0%E6%B3%95%E7%9B%B4%E6%8E%A5%E8%81%94%E7%BD%91%E7%9A%84%E9%97%AE%E9%A2%98/</link>
       <pubDate>Mon, 20 Jan 2025 10:41:12 +0800</pubDate>
       <guid>https://qvqw.date/posts/%E4%BD%BF%E7%94%A8sni-%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%97%A0%E6%B3%95%E7%9B%B4%E6%8E%A5%E8%81%94%E7%BD%91%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
-      <description>正式系统无法访问外网，测试系统可以访问外网。正式系统的一个SDK需要向外网发送HTTP请求，考虑使用sni 代理。
-软件 gost 参考文档
-部署 能联网的测试机使用docker compose部署（设置xxx.com的sni代理白名单，xxx.com前面的~表示白名单，不加~表示黑名单） services: gost: image: gogost/gost container_name: gost ports: - &amp;#34;80:80&amp;#34; command: -L sni://:80?bypass=~xxx.com restart: unless-stopped 不能联网的正式机配置/etc/hosts 测试机ip xxx.com 我的后端是容器部署的，然后给容器配置/etc/hosts文件映射就可以了
-注意 不能在构建docker image时候修改hosts，只能在容器运行时进行映射或者修改。因为构建阶段/etc/hosts是只读的。image是许多只读layer的叠加，而容器是只读layer和可读layer的叠加</description>
+      <description>&lt;p&gt;正式系统无法访问外网，测试系统可以访问外网。正式系统的一个SDK需要向外网发送HTTP请求，考虑使用sni 代理。&lt;/p&gt;
+&lt;h2 id=&#34;软件&#34;&gt;软件&lt;/h2&gt;
+&lt;p&gt;gost   &lt;a href=&#34;https://gost.run/tutorials/protocols/sni&#34;&gt;参考文档&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;部署&#34;&gt;部署&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;能联网的测试机使用docker compose部署（设置xxx.com的sni代理白名单，xxx.com前面的&lt;del&gt;表示白名单，不加&lt;/del&gt;表示黑名单）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;services:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  gost:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    image: gogost/gost
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    container_name: gost
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    ports:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      - &amp;#34;80:80&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    command: -L sni://:80?bypass=~xxx.com
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    restart: unless-stopped
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;不能联网的正式机配置/etc/hosts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;测试机ip   xxx.com
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;我的后端是容器部署的，然后给容器配置/etc/hosts文件映射就可以了&lt;/p&gt;
+&lt;h2 id=&#34;注意&#34;&gt;注意&lt;/h2&gt;
+&lt;p&gt;不能在构建docker image时候修改hosts，只能在容器运行时进行映射或者修改。因为构建阶段/etc/hosts是只读的。image是许多只读layer的叠加，而容器是只读layer和可读layer的叠加&lt;/p&gt;</description>
     </item>
     <item>
       <title>基于s3协议的对象存储如何创建或者删除文件夹</title>
       <link>https://qvqw.date/posts/%E5%9F%BA%E4%BA%8Es3%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E6%88%96%E8%80%85%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%A4%B9/</link>
       <pubDate>Sat, 06 Apr 2024 17:23:56 +0800</pubDate>
       <guid>https://qvqw.date/posts/%E5%9F%BA%E4%BA%8Es3%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E6%88%96%E8%80%85%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%A4%B9/</guid>
-      <description>基于s3协议的对象存储如何创建或者删除文件夹 ​ 首先我们必须明确的是，对象存储没有文件 夹的概念，所谓的文件夹只是文件的前缀
-参考链接https://www.codemzy.com/blog/delete-s3-folder-nodejs</description>
+      <description>&lt;h1 id=&#34;基于s3协议的对象存储如何创建或者删除文件夹&#34;&gt;基于s3协议的对象存储如何创建或者删除文件夹&lt;/h1&gt;
+&lt;p&gt;​    首先我们必须明确的是，对象存储没有文件 夹的概念，所谓的文件夹只是文件的前缀&lt;/p&gt;
+&lt;p&gt;参考链接https://www.codemzy.com/blog/delete-s3-folder-nodejs&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
