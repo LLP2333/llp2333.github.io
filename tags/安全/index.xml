@@ -34,7 +34,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;WL-Proxy-Client-IP
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;测试&#34;&gt;测试&lt;/h2&gt;
 &lt;p&gt;这里我使用了postman伪造了请求头X-Forwarded-For，经过测试，理论上只要知道正确的ip，就可以让ip白名单功能失效。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20250108103243598&#34; loading=&#34;lazy&#34; src=&#34;https://qvqw.date/posts/%E6%9F%90%E4%BA%91%E5%8A%9E%E5%85%AC%E5%BA%94%E7%94%A8api%E5%AD%98%E5%9C%A8ip%E7%99%BD%E5%90%8D%E5%8D%95%E7%BB%95%E8%BF%87%E9%A3%8E%E9%99%A9/index.assets/image-20250108103243598.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20250108103243598&#34; loading=&#34;lazy&#34; src=&#34;https://minioapi.qvqw.date/qvqw/ec68e8f1-b30b-406d-8188-1607f2038520.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;如果你有服务器的访问权限，但是只知道服务器的内网ip，可以尝试&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl ifconfig.me
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然后就能得到服务器的公网ip了&lt;/p&gt;
