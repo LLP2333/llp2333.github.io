@@ -30,7 +30,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;进行编译。&lt;/p&gt;
 &lt;p&gt;使用前需要配置blog环境变量，key为blog,value为你的项目的根路径&lt;/p&gt;
 &lt;p&gt;比如我的根目录是C:\UGit\qvqw.date&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20250107144700000&#34; loading=&#34;lazy&#34; src=&#34;https://minioapi.qvqw.date/qvqw/0212f0c9-7acf-4d21-87fc-dd305d03ba67.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20250107144700000&#34; loading=&#34;lazy&#34; src=&#34;https://minioapi.qvqw.date/qvqw/2025/6/19/%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;代码&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;package&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;main&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;

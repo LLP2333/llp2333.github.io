@@ -31,7 +31,7 @@
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;systemctl enable cpolar
 systemctl start cpolar
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;完成上面的内容就基本上配置好了,你可以在 cpolar 官网的状态页面看到你的 ssh 隧道，可以通过该域名和端口远程访问本地的 rock 5A&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20240413180045405&#34; loading=&#34;lazy&#34; src=&#34;https://minioapi.qvqw.date/qvqw/0ca38eac-69d8-489f-80e1-ea7617ccb444.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20240413180045405&#34; loading=&#34;lazy&#34; src=&#34;https://minioapi.qvqw.date/qvqw/2025/6/19/cpolar.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;注意：cpolar 默认会配置本地机器 ssh 的 内网穿透，如需定制自己的内网穿透，请尝试根据官网文档修改配置文件。免费的内网穿透会在机器重启后变更域名和端口，重启后可以从 cpolar 官网状态页面获取，也可以考虑升级付费用户。&lt;/p&gt;
 &lt;h2 id=&#34;配置文件&#34;&gt;配置文件&lt;/h2&gt;
 &lt;p&gt;默认的配置文件在&lt;/p&gt;
@@ -172,9 +172,9 @@ systemctl start cpolar
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hugo new posts/文章标题/index.md
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;注意：markdown文件必须以&lt;code&gt;index&lt;/code&gt;命名&lt;/p&gt;
 &lt;p&gt;typora图片设置&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20240401194227774&#34; loading=&#34;lazy&#34; src=&#34;https://minioapi.qvqw.date/qvqw/3d11acc4-162c-45a7-978b-b430755a78d8.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20240401194227774&#34; loading=&#34;lazy&#34; src=&#34;https://minioapi.qvqw.date/qvqw/2025/6/19/hugo1.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;你的文章的目录结构&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20240401194542462&#34; loading=&#34;lazy&#34; src=&#34;https://minioapi.qvqw.date/qvqw/62759524-a1c3-4caa-95ae-645d97a05c87.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20240401194542462&#34; loading=&#34;lazy&#34; src=&#34;https://minioapi.qvqw.date/qvqw/2025/6/19/hugo2.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;hugo常用命令&#34;&gt;hugo常用命令&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new posts/文章标题/index.md     &lt;span class=&#34;c1&#34;&gt;#新建文章&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo &lt;span class=&#34;c1&#34;&gt;#生成静态网页&lt;/span&gt;
