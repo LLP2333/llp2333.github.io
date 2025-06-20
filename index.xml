@@ -722,5 +722,12 @@ systemctl start cpolar
       <description>&lt;h3 id=&#34;该博客基于github-pagehugo搭建&#34;&gt;该博客基于GitHub page+hugo搭建&lt;/h3&gt;
 &lt;p&gt;&lt;img alt=&#34;image-20230731233415906&#34; loading=&#34;lazy&#34; src=&#34;https://minioapi.qvqw.date/qvqw/2025/6/19/%E5%A3%81%E7%BA%B83.png&#34;&gt;&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>海内存知己，天涯若比邻</title>
+      <link>https://qvqw.date/link/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://qvqw.date/link/</guid>
+      <description>link</description>
+    </item>
   </channel>
 </rss>

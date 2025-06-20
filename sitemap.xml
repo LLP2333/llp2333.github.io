@@ -148,5 +148,7 @@
     <loc>https://qvqw.date/search/</loc>
   </url><url>
     <loc>https://qvqw.date/series/</loc>
+  </url><url>
+    <loc>https://qvqw.date/link/</loc>
   </url>
 </urlset>
