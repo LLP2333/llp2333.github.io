@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.147.1</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 15 Jan 2026 18:54:05 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 15 Jan 2026 19:03:01 +0800</lastBuildDate>
     <atom:link href="https://qvqw.date/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux</title>
+      <link>https://qvqw.date/categories/linux/</link>
+      <pubDate>Thu, 15 Jan 2026 19:03:01 +0800</pubDate>
+      <guid>https://qvqw.date/categories/linux/</guid>
+      <description></description>
+    </item>
     <item>
       <title>MacOS</title>
       <link>https://qvqw.date/categories/macos/</link>
@@ -53,13 +60,6 @@
       <link>https://qvqw.date/categories/hugo/</link>
       <pubDate>Tue, 07 Jan 2025 14:11:52 +0800</pubDate>
       <guid>https://qvqw.date/categories/hugo/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linux</title>
-      <link>https://qvqw.date/categories/linux/</link>
-      <pubDate>Sat, 13 Apr 2024 17:35:54 +0800</pubDate>
-      <guid>https://qvqw.date/categories/linux/</guid>
       <description></description>
     </item>
     <item>

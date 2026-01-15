@@ -11,8 +11,107 @@
     </image>
     <generator>Hugo -- 0.147.1</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 15 Jan 2026 18:54:05 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 15 Jan 2026 19:03:01 +0800</lastBuildDate>
     <atom:link href="https://qvqw.date/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>记一次为rock5A从官方debian迁移到armbian系统,开机自启wifi热点</title>
+      <link>https://qvqw.date/posts/%E8%AE%B0%E4%B8%80%E6%AC%A1%E4%B8%BArock5a%E4%BB%8E%E5%AE%98%E6%96%B9debian%E8%BF%81%E7%A7%BB%E5%88%B0armbian%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Thu, 15 Jan 2026 19:03:01 +0800</pubDate>
+      <guid>https://qvqw.date/posts/%E8%AE%B0%E4%B8%80%E6%AC%A1%E4%B8%BArock5a%E4%BB%8E%E5%AE%98%E6%96%B9debian%E8%BF%81%E7%A7%BB%E5%88%B0armbian%E7%B3%BB%E7%BB%9F/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;最近想使用F50随身wifi和rock5A做一个随时可以玩任天堂splatoon3的加速器热点.
+已知F50可以和rock5A通过数据线共享网络&lt;/p&gt;
+&lt;p&gt;大概的思路&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;rock&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;A无线网卡的wifi热点-&amp;gt;rock&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;A代理软件-&amp;gt;F&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;-&amp;gt;互联网&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;但是折腾了很久,我的rock5A的Ax210的网卡驱动一直有问题,日志里面提示ucode错误.我感觉官方的debian系统驱动没有armbian丰富.
+为此,我决定迁移系统到Armbian,还买了一个radaxa官方的A8无线网卡.&lt;/p&gt;
+&lt;h1 id=&#34;需要的材料&#34;&gt;需要的材料&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;随身wifi F50&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;rock5A&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;radxa无线网卡A8&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A to C数据线(连接F50和rock5A)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;micro SD卡&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;emmc模块&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;网线&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;网线转type-C&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SD卡读卡器&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;系统要求&#34;&gt;系统要求&lt;/h1&gt;
+&lt;p&gt;旧的系统使用的是官方的debian12&lt;/p&gt;
+&lt;p&gt;新系统这里我使用的是Armbian_25.2.3_Rock-5a_noble_vendor_6.1.99.img.xz&lt;/p&gt;
+&lt;p&gt;新系统镜像下载地址https://armbian.lv.auroradev.org/dl/rock-5a/archive/&lt;/p&gt;
+&lt;h2 id=&#34;制作系统&#34;&gt;制作系统&lt;/h2&gt;
+&lt;p&gt;前面的系统下载完成后,就可以制作系统了.我之前的系统在emmc上保存的,默认情况下sd卡的系统启动的优先级高于emmc.
+我之前的系统在emmc上面,我的思路是在SD卡上创建新的系统,配置好系统后再使用dd命令,将sd卡的系统覆盖到emmc.
+这里需要注意,sd卡的容量最好低于emmc的容量.
+制作镜像我使用的是这个软件
+&lt;img alt=&#34;image-20260115192916471&#34; loading=&#34;lazy&#34; src=&#34;https://minioapi.qvqw.date/qvqw/2026/01/image-20260115192916471.webp&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;启动系统&#34;&gt;启动系统&lt;/h2&gt;
+&lt;p&gt;将SD卡插入rock5A,然后使用网线连接到路由器,确保电脑和rock5a在同一个局域网.然后就可以登录路由器后台获取rock5a的ip,在电脑使用ssh连接开发版&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Armbian的默认账户是 root，默认密码通常是 1234
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;换源&#34;&gt;换源&lt;/h2&gt;
+&lt;p&gt;需要对两个文件进行换源&lt;/p&gt;
+&lt;p&gt;armbain&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;root@rock-5a:/etc/apt/sources.list.d# cat armbian.sources 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Types: deb
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;URIs: https://mirrors.tuna.tsinghua.edu.cn/armbian
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Suites: noble
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Components: main noble-utils noble-desktop
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Signed-By: /usr/share/keyrings/armbian.gpg
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;root@rock-5a:/etc/apt/sources.list.d# 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;ubuntu&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;root@rock-5a:/etc/apt/sources.list.d# cat armbian.sources 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Types: deb
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;URIs: https://mirrors.tuna.tsinghua.edu.cn/armbian
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Suites: noble
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Components: main noble-utils noble-desktop
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Signed-By: /usr/share/keyrings/armbian.gpg
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;root@rock-5a:/etc/apt/sources.list.d# cat ubuntu.sources 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Types: deb
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;URIs: https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Suites: noble noble-updates noble-backports
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Components: main restricted universe multiverse
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Types: deb-src
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;URIs: https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Suites: noble noble-updates noble-backports
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Components: main restricted universe multiverse
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Types: deb
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;URIs: https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Suites: noble-security
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Components: main restricted universe multiverse
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Types: deb-src
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;URIs: https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Suites: noble-security
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Components: main restricted universe multiverse
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;设置ipv4转发&#34;&gt;设置ipv4转发&lt;/h2&gt;
+&lt;p&gt;创建wifi热点需要开启转发功能&lt;/p&gt;</description>
+    </item>
     <item>
       <title>解决卸载软件后Finder插件仍然存在的问题</title>
       <link>https://qvqw.date/posts/%E8%A7%A3%E5%86%B3%E5%8D%B8%E8%BD%BD%E8%BD%AF%E4%BB%B6%E5%90%8Efinder%E6%8F%92%E4%BB%B6%E4%BB%8D%E7%84%B6%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98/</link>
